@@ -1,0 +1,25 @@
+uuid: 7d2a0db9-7167-42bb-b900-ae458146f600
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.page.body
+    - node.type.page
+  module:
+    - text
+    - user
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 101
+hidden: {  }
+third_party_settings: {  }

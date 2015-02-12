@@ -1,0 +1,11 @@
+uuid: 0a055e4e-af23-483d-9d1e-30f331661900
+name: Coders4Africa
+mail: ousmanesamba@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
