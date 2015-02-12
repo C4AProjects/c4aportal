@@ -36,4 +36,4 @@ sites/simpletest
 # simpletest
 
 .DS_Store
-.idea/*
+.idea
