@@ -1,0 +1,21 @@
+uuid: 50c77b61-228a-4912-aa20-32b0fb499a0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_full_name
+id: user.user.field_full_name
+field_name: field_full_name
+entity_type: user
+bundle: user
+label: 'Full Name'
+description: 'Give your full name'
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+third_party_settings: {  }
+field_type: string

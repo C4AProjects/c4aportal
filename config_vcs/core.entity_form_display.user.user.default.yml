@@ -2,7 +2,22 @@ uuid: 4a602a14-6b09-427c-af0a-103976ee6a44
 langcode: und
 status: true
 dependencies:
+  config:
+    - field.field.user.user.field_bio
+    - field.field.user.user.field_company_name
+    - field.field.user.user.field_full_name
+    - field.field.user.user.field_job_availability
+    - field.field.user.user.field_location
+    - field.field.user.user.field_looking_for
+    - field.field.user.user.field_my_skills
+    - field.field.user.user.field_social_links
+    - field.field.user.user.field_title
+    - field.field.user.user.user_picture
   module:
+    - image
+    - link
+    - taxonomy
+    - text
     - user
 id: user.user.default
 targetEntityType: user
@@ -11,18 +26,91 @@ mode: default
 content:
   account:
     weight: -10
+    settings: {  }
+    third_party_settings: {  }
   user_picture:
     type: image_image
+    weight: -1
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    weight: -1
   language:
     weight: 0
+    settings: {  }
+    third_party_settings: {  }
   contact:
     weight: 5
+    settings: {  }
+    third_party_settings: {  }
   timezone:
     weight: 6
-hidden: {  }
+    settings: {  }
+    third_party_settings: {  }
+  field_full_name:
+    type: string_textfield
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_location:
+    type: string_textfield
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_company_name:
+    type: string_textfield
+    weight: 11
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_bio:
+    type: text_textarea
+    weight: 12
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_job_availability:
+    type: options_select
+    weight: 13
+    settings: {  }
+    third_party_settings: {  }
+  field_looking_for:
+    type: taxonomy_autocomplete
+    weight: 14
+    settings:
+      placeholder: ''
+      size: 60
+      autocomplete_route_name: taxonomy.autocomplete
+    third_party_settings: {  }
+  field_my_skills:
+    type: taxonomy_autocomplete
+    weight: 15
+    settings:
+      size: 60
+      autocomplete_route_name: taxonomy.autocomplete
+      placeholder: ''
+    third_party_settings: {  }
+  field_social_links:
+    type: link_default
+    weight: 16
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+hidden:
+  field_title_: true
+  field_test: true
 third_party_settings: {  }

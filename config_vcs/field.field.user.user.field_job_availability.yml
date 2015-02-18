@@ -1,0 +1,23 @@
+uuid: e65c4c8e-ec48-4243-a700-ad0244fa5fc5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_job_availability
+  module:
+    - options
+id: user.user.field_job_availability
+field_name: field_job_availability
+entity_type: user
+bundle: user
+label: 'Job availability'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 'Not available'
+default_value_callback: ''
+settings: {  }
+third_party_settings: {  }
+field_type: list_string

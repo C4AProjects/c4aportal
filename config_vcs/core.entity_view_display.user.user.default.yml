@@ -2,7 +2,23 @@ uuid: c1d435bf-15ed-4a69-ad07-7f9868ad807b
 langcode: und
 status: true
 dependencies:
+  config:
+    - field.field.user.user.field_bio
+    - field.field.user.user.field_company_name
+    - field.field.user.user.field_full_name
+    - field.field.user.user.field_job_availability
+    - field.field.user.user.field_location
+    - field.field.user.user.field_looking_for
+    - field.field.user.user.field_my_skills
+    - field.field.user.user.field_social_links
+    - field.field.user.user.field_title
+    - field.field.user.user.user_picture
   module:
+    - image
+    - link
+    - options
+    - taxonomy
+    - text
     - user
 id: user.user.default
 targetEntityType: user
@@ -19,5 +35,70 @@ content:
     label: hidden
   member_for:
     weight: 5
-hidden: {  }
+  field_full_name:
+    weight: 6
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_location:
+    weight: 7
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_title:
+    weight: 9
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_company_name:
+    weight: 10
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_bio:
+    weight: 11
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_job_availability:
+    weight: 12
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_looking_for:
+    weight: 13
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: taxonomy_term_reference_link
+  field_my_skills:
+    weight: 14
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: taxonomy_term_reference_link
+  field_social_links:
+    weight: 15
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+hidden:
+  field_title_: true
+  field_test: true
 third_party_settings: {  }

@@ -1,0 +1,21 @@
+uuid: 3b61fe52-0013-431b-a607-7d9252f520aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_title
+id: user.user.field_title
+field_name: field_title
+entity_type: user
+bundle: user
+label: Title
+description: 'Your title like : Drupal Front-End Developer'
+required: false
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+third_party_settings: {  }
+field_type: string

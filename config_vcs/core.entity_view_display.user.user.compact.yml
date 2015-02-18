@@ -4,7 +4,18 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
+    - field.field.user.user.field_bio
+    - field.field.user.user.field_company_name
+    - field.field.user.user.field_full_name
+    - field.field.user.user.field_job_availability
+    - field.field.user.user.field_location
+    - field.field.user.user.field_looking_for
+    - field.field.user.user.field_my_skills
+    - field.field.user.user.field_social_links
+    - field.field.user.user.field_title
+    - field.field.user.user.user_picture
   module:
+    - image
     - user
 id: user.user.compact
 targetEntityType: user
@@ -21,4 +32,15 @@ content:
     label: hidden
 hidden:
   member_for: true
+  field_full_name: true
+  field_location: true
+  field_title: true
+  field_title_: true
+  field_company_name: true
+  field_my_skills: true
+  field_social_links: true
+  field_bio: true
+  field_looking_for: true
+  field_job_availability: true
+  field_test: true
 third_party_settings: {  }

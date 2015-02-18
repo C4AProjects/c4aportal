@@ -1,0 +1,25 @@
+uuid: 986bc1e9-ce29-47dc-bc38-5606d2c2966a
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+    - user
+id: user.field_my_skills
+field_name: field_my_skills
+entity_type: user
+type: taxonomy_term_reference
+settings:
+  allowed_values:
+    -
+      vocabulary: skills
+      parent: 0
+  target_type: taxonomy_term
+  options_list_callback: null
+  target_bundle: null
+module: taxonomy
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false

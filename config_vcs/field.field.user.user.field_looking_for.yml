@@ -1,0 +1,22 @@
+uuid: 383a22fa-7f83-47fa-802f-47b2095a968f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_looking_for
+  module:
+    - taxonomy
+id: user.user.field_looking_for
+field_name: field_looking_for
+entity_type: user
+bundle: user
+label: 'Looking for'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+third_party_settings: {  }
+field_type: taxonomy_term_reference
