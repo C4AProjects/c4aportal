@@ -1,0 +1,17 @@
+uuid: fb2220d5-8057-456d-9a07-7c018327c775
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+name: Post
+type: post
+description: 'C4a portal Post content type '
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: 'main:'
