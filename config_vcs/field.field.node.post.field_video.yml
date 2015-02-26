@@ -1,4 +1,4 @@
-uuid: b6458f89-6b74-447b-9618-240b9078c202
+uuid: cd32d6c0-4525-4119-b406-6c4bc1ecdc5f
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - field.storage.node.field_video
     - node.type.post
   module:
-    - youtube
+    - link
 id: node.post.field_video
 field_name: field_video
 entity_type: node
@@ -17,6 +17,8 @@ required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
+settings:
+  link_type: 16
+  title: 0
 third_party_settings: {  }
-field_type: youtube
+field_type: link

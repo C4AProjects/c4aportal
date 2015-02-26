@@ -5,6 +5,10 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.post.body
+    - field.field.node.post.comment
+    - field.field.node.post.field_link
+    - field.field.node.post.field_picture
+    - field.field.node.post.field_video
     - node.type.post
   module:
     - text
@@ -23,5 +27,9 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_link: true
+  field_picture: true
+  comment: true
+  field_video: true
 third_party_settings: {  }

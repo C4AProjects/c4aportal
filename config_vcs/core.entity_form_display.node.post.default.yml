@@ -16,7 +16,6 @@ dependencies:
     - link
     - path
     - text
-    - youtube
 id: node.post.default
 targetEntityType: node
 bundle: post
@@ -45,15 +44,15 @@ content:
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
+    weight: 15
     settings:
       display_label: true
-    weight: 15
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
+    weight: 16
     settings:
       display_label: true
-    weight: 16
     third_party_settings: {  }
   path:
     type: path
@@ -69,28 +68,30 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_link:
+    type: link_default
     weight: 32
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-    type: link_default
   field_picture:
+    type: image_image
     weight: 33
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    type: image_image
-  field_video:
-    weight: 34
-    settings: {  }
-    third_party_settings: {  }
-    type: youtube
   comment:
+    type: comment_default
     weight: 35
     settings: {  }
     third_party_settings: {  }
-    type: comment_default
+  field_video:
+    type: link_default
+    weight: 36
+    settings:
+      placeholder_url: 'youtube, vimeo, dailymotion video linkl'
+      placeholder_title: ''
+    third_party_settings: {  }
 hidden: {  }
 third_party_settings: {  }
