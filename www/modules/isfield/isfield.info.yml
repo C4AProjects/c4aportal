@@ -1,0 +1,13 @@
+name: Internet Sources field
+type: module
+description: Provides a field for Internet sources media (YouTube, Dailymotion, Vimeo etc.)
+package: Media
+# core: 8.x
+dependencies:
+  - field
+
+# Information added by Drupal.org packaging script on 2014-10-03
+version: '8.x-1.2-rc2'
+core: '8.x'
+project: 'isfield'
+datestamp: 1412351201
