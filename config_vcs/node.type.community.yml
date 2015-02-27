@@ -1,0 +1,17 @@
+uuid: c18bbead-72b0-4751-9c32-5057884b437b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+name: Community
+type: community
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: 'main:'

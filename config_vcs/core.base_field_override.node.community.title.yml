@@ -1,0 +1,21 @@
+uuid: 432de1e3-b5f8-4426-9700-e4ef81d1b93f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.community
+id: node.community.title
+field_name: title
+entity_type: node
+bundle: community
+label: 'Community name'
+description: 'The title of this node, always treated as non-markup plain text.'
+required: true
+translatable: true
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+third_party_settings: {  }
+field_type: string

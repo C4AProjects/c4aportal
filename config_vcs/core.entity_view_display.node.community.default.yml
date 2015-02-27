@@ -1,0 +1,35 @@
+uuid: c74cfd47-f117-4bc4-920a-10bfe309d487
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.community.body
+    - field.field.node.community.field_image
+    - node.type.community
+  module:
+    - image
+    - text
+    - user
+id: node.community.default
+targetEntityType: node
+bundle: community
+mode: default
+content:
+  links:
+    weight: 100
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+hidden: {  }
+third_party_settings: {  }

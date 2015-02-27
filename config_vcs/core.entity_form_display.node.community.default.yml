@@ -1,25 +1,19 @@
-uuid: 6213a920-8b07-4c4c-aa00-a032087349cb
+uuid: db5107ae-639b-456f-9b29-419258cf3bff
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.post.body
-    - field.field.node.post.comment
-    - field.field.node.post.field_community
-    - field.field.node.post.field_link
-    - field.field.node.post.field_picture
-    - field.field.node.post.field_video
-    - node.type.post
+    - field.field.node.community.body
+    - field.field.node.community.field_image
+    - node.type.community
   module:
-    - comment
     - entity_reference
     - image
-    - link
     - path
     - text
-id: node.post.default
+id: node.community.default
 targetEntityType: node
-bundle: post
+bundle: community
 mode: default
 content:
   title:
@@ -45,15 +39,15 @@ content:
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 15
     settings:
       display_label: true
+    weight: 15
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 16
     settings:
       display_label: true
+    weight: 16
     third_party_settings: {  }
   path:
     type: path
@@ -68,40 +62,12 @@ content:
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
-  field_link:
-    type: link_default
+  field_image:
     weight: 32
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-  field_picture:
-    type: image_image
-    weight: 33
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-  comment:
-    type: comment_default
-    weight: 35
-    settings: {  }
-    third_party_settings: {  }
-  field_video:
-    type: link_default
-    weight: 36
-    settings:
-      placeholder_url: 'youtube, vimeo, dailymotion video linkl'
-      placeholder_title: ''
-    third_party_settings: {  }
-  field_community:
-    weight: 37
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      autocomplete_type: tags
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: image_image
 hidden: {  }
 third_party_settings: {  }

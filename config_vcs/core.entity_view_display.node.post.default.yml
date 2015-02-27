@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.post.body
     - field.field.node.post.comment
+    - field.field.node.post.field_community
     - field.field.node.post.field_link
     - field.field.node.post.field_picture
     - field.field.node.post.field_video
@@ -68,5 +69,6 @@ content:
       showinfo: '-'
     third_party_settings: {  }
     label: above
-hidden: {  }
+hidden:
+  field_community: true
 third_party_settings: {  }

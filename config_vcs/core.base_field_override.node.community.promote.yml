@@ -1,0 +1,21 @@
+uuid: d3ed411d-3983-4db8-885f-9582c1435485
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.community
+id: node.community.promote
+field_name: promote
+entity_type: node
+bundle: community
+label: Promote
+description: 'A boolean indicating whether the node should be displayed on the front page.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings: {  }
+third_party_settings: {  }
+field_type: boolean
