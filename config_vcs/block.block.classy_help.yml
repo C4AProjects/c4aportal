@@ -1,0 +1,23 @@
+uuid: 8d348c7e-5c97-43c7-a40e-14b0677ddbf3
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - classy
+id: classy_help
+theme: classy
+region: help
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+  cache:
+    max_age: -1
+    contexts: {  }
+visibility: {  }

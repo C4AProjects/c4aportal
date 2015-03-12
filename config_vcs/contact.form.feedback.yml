@@ -1,0 +1,10 @@
+uuid: 83fa0916-433d-4739-9202-2be579a75e63
+langcode: en
+status: true
+dependencies: {  }
+id: feedback
+label: 'Website feedback'
+recipients:
+  - mmkmou@mmkmou.net
+reply: ''
+weight: 0

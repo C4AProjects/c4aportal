@@ -1,0 +1,8 @@
+uuid: 245757ef-f9c2-4c7a-b604-4a51f5523a22
+langcode: en
+status: true
+dependencies: {  }
+id: main
+label: 'Main navigation'
+description: 'Use this for linking to the main site sections.'
+locked: true

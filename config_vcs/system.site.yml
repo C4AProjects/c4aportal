@@ -1,0 +1,11 @@
+uuid: f816c8e4-008e-49ad-b200-a2e6fe75f87a
+name: c4aportal
+mail: mmkmou@mmkmou.net
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
