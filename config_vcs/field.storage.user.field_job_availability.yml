@@ -1,0 +1,38 @@
+uuid: faccf1a9-9c2c-4500-9e00-a08d426dba06
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_job_availability
+field_name: field_job_availability
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Not available'
+      label: 'Not available'
+    -
+      value: Full-time
+      label: Full-time
+    -
+      value: Part-time
+      label: Part-time
+    -
+      value: Internship
+      label: Internship
+    -
+      value: 'Willing to relocate'
+      label: 'Willing to relocate'
+    -
+      value: 'Willing to entertain option'
+      label: 'Willing to entertain option'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false

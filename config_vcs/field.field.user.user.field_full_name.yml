@@ -1,0 +1,20 @@
+uuid: cff24f6e-62a9-445d-a003-3b781ae25efd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_full_name
+id: user.user.field_full_name
+field_name: field_full_name
+entity_type: user
+bundle: user
+label: 'Full Name'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

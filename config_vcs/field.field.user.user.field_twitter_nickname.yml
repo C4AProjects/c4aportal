@@ -1,0 +1,20 @@
+uuid: 98807d5a-f851-40c8-a628-405ccfadb329
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_twitter_nickname
+id: user.user.field_twitter_nickname
+field_name: field_twitter_nickname
+entity_type: user
+bundle: user
+label: 'Twitter nickname'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

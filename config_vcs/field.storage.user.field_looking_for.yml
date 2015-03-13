@@ -1,0 +1,25 @@
+uuid: 595d23e3-cccd-4b88-9d07-7bedd072d286
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+    - user
+id: user.field_looking_for
+field_name: field_looking_for
+entity_type: user
+type: taxonomy_term_reference
+settings:
+  allowed_values:
+    -
+      vocabulary: looking_for
+      parent: 0
+  target_type: taxonomy_term
+  options_list_callback: null
+  target_bundle: null
+module: taxonomy
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false

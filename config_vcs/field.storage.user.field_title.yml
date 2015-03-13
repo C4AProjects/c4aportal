@@ -1,0 +1,41 @@
+uuid: 21d2698e-9351-45c1-a800-acd5390154d9
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_title
+field_name: field_title
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '-- --'
+      label: '-- --'
+    -
+      value: Mr.
+      label: Mr.
+    -
+      value: Mrs.
+      label: Mrs.
+    -
+      value: Miss
+      label: Miss
+    -
+      value: Ms.
+      label: Ms.
+    -
+      value: Dr.
+      label: Dr.
+    -
+      value: Prof.
+      label: Prof.
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false

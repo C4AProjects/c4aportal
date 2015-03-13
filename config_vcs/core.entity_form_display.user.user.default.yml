@@ -2,7 +2,25 @@ uuid: bc234960-d0b9-44ae-a700-d8fae74f7faf
 langcode: und
 status: true
 dependencies:
+  config:
+    - field.field.user.user.field_address
+    - field.field.user.user.field_bio
+    - field.field.user.user.field_company_name
+    - field.field.user.user.field_facebook
+    - field.field.user.user.field_full_name
+    - field.field.user.user.field_job_availability
+    - field.field.user.user.field_linkedin
+    - field.field.user.user.field_looking_for
+    - field.field.user.user.field_my_skills
+    - field.field.user.user.field_title
+    - field.field.user.user.field_twitter_nickname
+    - field.field.user.user.user_picture
   module:
+    - image
+    - link
+    - simpleaddress
+    - taxonomy
+    - text
     - user
 id: user.user.default
 targetEntityType: user
@@ -10,18 +28,109 @@ bundle: user
 mode: default
 content:
   account:
-    weight: -10
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
   contact:
+    weight: 15
+    settings: {  }
+    third_party_settings: {  }
+  field_address:
+    type: simpleaddress_default
     weight: 5
-  language:
-    weight: 0
-  timezone:
+    settings:
+      placeholder_streetAddress: '102, Olive Grove'
+      placeholder_addressLocality: Swindon
+      placeholder_addressRegion: Wiltshire
+      placeholder_postalCode: 'SN25 9RT'
+      placeholder_postOfficeBoxNumber: 'P.O. Box 12345'
+      placeholder_addressCountry: GB
+    third_party_settings: {  }
+  field_bio:
+    type: text_textarea
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_company_name:
+    type: string_textfield
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_facebook:
+    type: link_default
+    weight: 10
+    settings:
+      placeholder_url: 'Your facebook profile'
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_full_name:
+    type: string_textfield
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_job_availability:
+    type: options_select
     weight: 6
+    settings: {  }
+    third_party_settings: {  }
+  field_linkedin:
+    type: link_default
+    weight: 11
+    settings:
+      placeholder_url: 'Your linkedin profile'
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_looking_for:
+    type: taxonomy_autocomplete
+    weight: 9
+    settings:
+      placeholder: 'You looking for...'
+      size: 60
+      autocomplete_route_name: taxonomy.autocomplete
+    third_party_settings: {  }
+  field_my_skills:
+    type: taxonomy_autocomplete
+    weight: 8
+    settings:
+      placeholder: 'your skills...'
+      size: 60
+      autocomplete_route_name: taxonomy.autocomplete
+    third_party_settings: {  }
+  field_title:
+    type: options_select
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  field_twitter_nickname:
+    type: string_textfield
+    weight: 12
+    settings:
+      size: 60
+      placeholder: 'Your twitter nickname'
+    third_party_settings: {  }
+  language:
+    weight: 13
+    settings: {  }
+    third_party_settings: {  }
+  signature_settings:
+    weight: 14
+    settings: {  }
+    third_party_settings: {  }
+  timezone:
+    weight: 16
+    settings: {  }
+    third_party_settings: {  }
   user_picture:
     type: image_image
+    weight: 0
     settings:
       progress_indicator: throbber
-      preview_image_style: thumbnail
+      preview_image_style: medium
     third_party_settings: {  }
-    weight: -1
 hidden: {  }

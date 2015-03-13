@@ -1,0 +1,21 @@
+uuid: 282c2d34-cdc8-4767-8100-d3e5dc1e89c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_my_skills
+  module:
+    - taxonomy
+id: user.user.field_my_skills
+field_name: field_my_skills
+entity_type: user
+bundle: user
+label: 'My skills'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+field_type: taxonomy_term_reference

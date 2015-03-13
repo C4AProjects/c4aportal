@@ -2,15 +2,115 @@ uuid: 5199864d-fa34-4ab4-a300-e0be7568ea46
 langcode: und
 status: true
 dependencies:
+  config:
+    - field.field.user.user.field_address
+    - field.field.user.user.field_bio
+    - field.field.user.user.field_company_name
+    - field.field.user.user.field_facebook
+    - field.field.user.user.field_full_name
+    - field.field.user.user.field_job_availability
+    - field.field.user.user.field_linkedin
+    - field.field.user.user.field_looking_for
+    - field.field.user.user.field_my_skills
+    - field.field.user.user.field_title
+    - field.field.user.user.field_twitter_nickname
+    - field.field.user.user.user_picture
   module:
+    - image
+    - link
+    - options
+    - simpleaddress
+    - taxonomy
+    - text
     - user
 id: user.user.default
 targetEntityType: user
 bundle: user
 mode: default
 content:
+  field_address:
+    type: simpleaddress_default
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    label: above
+  field_bio:
+    type: text_default
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    label: above
+  field_company_name:
+    type: string
+    weight: 8
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    label: above
+  field_facebook:
+    type: link
+    weight: 13
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    label: above
+  field_full_name:
+    type: string
+    weight: 18
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    label: above
+  field_job_availability:
+    type: list_default
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    label: above
+  field_linkedin:
+    type: link
+    weight: 15
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    label: above
+  field_looking_for:
+    type: taxonomy_term_reference_link
+    weight: 12
+    settings: {  }
+    third_party_settings: {  }
+    label: above
+  field_my_skills:
+    type: taxonomy_term_reference_link
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+    label: above
+  field_title:
+    type: list_default
+    weight: 19
+    settings: {  }
+    third_party_settings: {  }
+    label: above
+  field_twitter_nickname:
+    type: string
+    weight: 16
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    label: above
   member_for:
     weight: 5
+    settings: {  }
+    third_party_settings: {  }
   user_picture:
     type: image
     weight: 0
