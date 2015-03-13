@@ -1,0 +1,32 @@
+uuid: e8565a55-b71f-4f32-8b4f-790521317fcc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_type
+field_name: field_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Text
+      label: Text
+    -
+      value: Link
+      label: Link
+    -
+      value: Video
+      label: Video
+    -
+      value: Picture
+      label: Picture
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false

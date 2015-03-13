@@ -1,0 +1,38 @@
+uuid: 521c73c7-5c22-4a0c-ad00-0ce4c13152de
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: like
+label: Like
+types:
+  post: post
+  page: '0'
+  article: '0'
+entity_type: node
+enabled: true
+global: false
+flag_short: 'Like '
+flag_long: ''
+flag_message: ''
+unflag_short: Unlike
+unflag_long: ''
+unflag_message: ''
+unflag_denied_text: ''
+weight: 0
+flag_type: flagtype_node
+link_type: 'AJAX Link'
+flagTypeConfig:
+  show_in_links:
+    full: full
+    rss: rss
+    teaser: teaser
+    search_index: 0
+    search_result: 0
+  show_as_field: 1
+  show_on_form: 0
+  show_contextual_link: 0
+  i18n: 0
+  access_author: ''
+linkTypeConfig: {  }

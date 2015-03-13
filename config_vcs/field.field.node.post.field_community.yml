@@ -1,0 +1,27 @@
+uuid: ebbe2a77-2738-4e2a-8955-859c0520e2a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_community
+    - node.type.post
+  module:
+    - entity_reference
+id: node.post.field_community
+field_name: field_community
+entity_type: node
+bundle: post
+label: Community
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings:
+    target_bundles:
+      community: community
+    sort:
+      field: _none
+field_type: entity_reference

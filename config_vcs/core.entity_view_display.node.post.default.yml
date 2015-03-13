@@ -1,0 +1,85 @@
+uuid: a4c4519e-1548-4bf1-8505-5f74b9c5a8e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.post.body
+    - field.field.node.post.comment
+    - field.field.node.post.field_community
+    - field.field.node.post.field_image
+    - field.field.node.post.field_link
+    - field.field.node.post.field_type
+    - field.field.node.post.field_video
+    - node.type.post
+  module:
+    - comment
+    - image
+    - isfield
+    - link
+    - options
+    - text
+    - user
+id: node.post.default
+targetEntityType: node
+bundle: post
+mode: default
+content:
+  body:
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    label: hidden
+  comment:
+    type: comment_default
+    weight: 5
+    settings:
+      pager_id: 0
+    third_party_settings: {  }
+    label: above
+  field_image:
+    weight: 7
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_link:
+    type: link
+    weight: 1
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    label: above
+  field_type:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_video:
+    type: isfield_video
+    weight: 2
+    settings:
+      dimensions: 480x360
+      autoplay: '-'
+      controls: '-'
+      loop: '-'
+      showinfo: '-'
+    third_party_settings: {  }
+    label: above
+  flag_like:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_community: true

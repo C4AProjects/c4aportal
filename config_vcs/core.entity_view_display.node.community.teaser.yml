@@ -1,0 +1,30 @@
+uuid: d15f9cee-f3ae-434c-a610-16b228bc0b20
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.community.body
+    - field.field.node.community.field_image
+    - node.type.community
+  module:
+    - text
+    - user
+id: node.community.teaser
+targetEntityType: node
+bundle: community
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  flag_follow:
+    weight: 10
+  links:
+    weight: 100
+hidden:
+  field_image: true

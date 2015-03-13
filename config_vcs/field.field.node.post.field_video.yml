@@ -1,0 +1,23 @@
+uuid: 9b3b1cff-cc9d-4f4c-a200-e509e2a75c6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video
+    - node.type.post
+  module:
+    - link
+id: node.post.field_video
+field_name: field_video
+entity_type: node
+bundle: post
+label: Video
+description: 'video link from YouTube, Vimeo, Dailymotion...'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link
