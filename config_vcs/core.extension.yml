@@ -1,4 +1,5 @@
 module:
+  basic_auth: 0
   block: 0
   block_content: 0
   breakpoint: 0
@@ -18,6 +19,7 @@ module:
   file: 0
   filter: 0
   flag: 0
+  hal: 0
   help: 0
   history: 0
   image: 0
@@ -29,7 +31,9 @@ module:
   path: 0
   quickedit: 0
   rdf: 0
+  rest: 0
   search: 0
+  serialization: 0
   shortcut: 0
   simpleaddress: 0
   system: 0

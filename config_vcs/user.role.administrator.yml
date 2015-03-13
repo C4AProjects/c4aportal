@@ -133,3 +133,7 @@ permissions:
   - 'edit terms in looking_for'
   - 'edit terms in skills'
   - 'administer linkicon'
+  - 'restful delete entity:node'
+  - 'restful get entity:node'
+  - 'restful patch entity:node'
+  - 'restful post entity:node'
