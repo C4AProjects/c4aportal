@@ -14,3 +14,7 @@ permissions:
   - 'skip comment approval'
   - 'access site-wide contact form'
   - 'access shortcuts'
+  - 'create page content'
+  - 'delete any page content'
+  - 'delete own page content'
+  - 'restful get entity:node'
