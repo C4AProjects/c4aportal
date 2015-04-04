@@ -1,0 +1,23 @@
+uuid: b105e99a-8104-4fc9-bc57-87b6c575f03e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - c4aportal
+id: c4aportal_breadcrumbs
+theme: c4aportal
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+  cache:
+    max_age: 0
+    contexts: {  }
+visibility: {  }

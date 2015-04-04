@@ -1,0 +1,23 @@
+uuid: ebb5baa4-20ba-45ee-a900-d645d7a756f2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - c4aportal
+id: c4aportal_powered
+theme: c4aportal
+region: sidebar_first
+weight: 10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+  cache:
+    max_age: 0
+    contexts: {  }
+visibility: {  }

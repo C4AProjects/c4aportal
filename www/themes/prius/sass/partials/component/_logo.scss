@@ -1,0 +1,41 @@
+/**
+ * @file
+ * Logo.
+ */
+
+/* Mobile First */
+.logo {
+  a {
+    // @include image-replace('../images/logos/logo_medium.png', block);
+    @include unstyled-link();
+    @include transition(all .5s ease-out);
+  }
+}
+
+
+@include breakpoint($bp-tablet) {
+  .logo {
+    a{
+      line-height: 100px;
+      font-size: 2em;
+    }
+  }
+}
+
+
+@include breakpoint($bp-desktop) {
+  .logo {
+    a{
+      line-height: 200px;
+      font-size: 4em;
+    }
+  }
+}
+
+
+@include breakpoint($bp-large) {
+}
+
+
+@include breakpoint($bp-xlarge) {
+}

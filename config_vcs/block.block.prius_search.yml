@@ -1,0 +1,23 @@
+uuid: 506f68b9-a965-4dc4-9802-2c65a11943e6
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - prius
+id: prius_search
+theme: prius
+region: help
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+  cache:
+    max_age: 0
+    contexts: {  }
+visibility: {  }

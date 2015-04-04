@@ -1,0 +1,190 @@
+/**
+ * @file
+ * Navigation.
+ */
+
+/* Mobile First */
+.menu--main {
+  ul {
+
+    li {
+      position: relative;
+      border-top: 1px solid rgba(60, 101, 233, 0.15);
+
+      .submenu-button {
+        position: absolute;
+        z-index: 10;
+        right: 0;
+        top: 0;
+        display: block;
+        border-left: 1px solid rgba(60, 101, 233, 0.15);
+        height: 52px;
+        width: 52px;
+        cursor: pointer;
+
+        &::after,
+        &::before {
+          content: '';
+          position: absolute;
+          top: 21px;
+          left: 26px;
+          display: block;
+          width: 1px;
+          height: 11px;
+          background: rgba(60, 101, 233, 0.5);
+          z-index: 99;
+        }
+
+        &::before {
+          left: 21px;
+          top: 26px;
+          width: 11px;
+          height: 1px;
+        }
+      }
+
+      a {
+        @include unstyled-link();
+        display: block;
+        outline: none;
+        color: $white;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 10px;
+        font-size: 0.5em;
+
+        &:hover {
+          background: rgba(60, 101, 233, 0.15);
+        }
+
+        &.active {
+          font-weight: $bold;
+        }
+      }
+
+      // Second level.
+      ul {
+        display: none;
+        li {
+          a {
+            padding-left: 20px;
+          }
+
+          li {
+            a {
+              padding-left: 40px;
+            }
+          }
+        }
+      }
+
+      &.open {
+        > ul {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+
+@include breakpoint($bp-tablet) {
+  .menu--main {
+    ul {
+      padding-right: 20px;
+      display: block!important;
+
+      li {
+        border-top: none 0;
+
+        .submenu-button {
+          display: none;
+        }
+
+        &.has-sub > a {
+          position: relative;
+
+          &::after {
+            position: absolute;
+            top: 7px;
+            right: 10px;
+            width: 4px;
+            height: 4px;
+            border-bottom: 1px solid $blue-dark;
+            border-right: 1px solid $blue-dark;
+            content: "";
+            @include transform(rotate(45deg));
+          }
+        }
+
+        a {
+          font-size: 0.9em;
+          padding: 0px 5px;
+          margin: 0!important;;
+          text-transform: uppercase;
+          color: $blue;
+          background: transparent!important;
+
+          &:hover {
+            background: transparent!important;
+            color: $green;
+          }
+
+          &:before {
+            content: ""!important;
+            padding: 0;
+          }
+        }
+
+        // Second level.
+        ul {
+          li {
+
+            &.has-sub > a {
+
+              &::after {
+                @include transform(rotate(-45deg));
+              }
+            }
+
+            // Third level
+            ul {
+              li {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@include breakpoint($bp-desktop) {
+  .menu--main {
+    ul {
+      padding-right: 40px;
+      li {
+        a {
+          font-size: 1em;
+          padding: 0 0.1em;
+        }
+      }
+    }
+  }
+}
+
+
+@include breakpoint($bp-large) {
+  .menu--main {
+    ul {
+      padding-right: 50px;
+      li {
+        a {
+          font-size: 1.1em;
+          padding: 0 0.9em;
+        }
+      }
+    }
+  }
+}

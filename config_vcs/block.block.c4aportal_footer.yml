@@ -1,0 +1,27 @@
+uuid: c94fa888-2be0-4060-8706-6e001db7fce9
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - c4aportal
+id: c4aportal_footer
+theme: c4aportal
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Footer menu'
+  provider: system
+  label_display: visible
+  cache:
+    max_age: -1
+    contexts: {  }
+  level: 1
+  depth: 0
+visibility: {  }

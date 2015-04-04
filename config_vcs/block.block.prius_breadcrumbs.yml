@@ -1,0 +1,23 @@
+uuid: 61f4fa15-b6d0-46f9-bd00-ce1ec732741c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - prius
+id: prius_breadcrumbs
+theme: prius
+region: help
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+  cache:
+    max_age: 0
+    contexts: {  }
+visibility: {  }

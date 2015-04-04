@@ -1,0 +1,27 @@
+/**
+ * @file
+ * Variables.
+ */
+
+// Baseline: 100% = 1 em ~= 16px ~= 14pt
+
+// Breakpoint.
+$bp-small: 30em; // 480px/16
+$bp-tablet: 48em; // 768px/16
+$bp-desktop: 62em; // 992px/16
+$bp-large: 76.5em; // 1224px/16
+$bp-xlarge: 114em; // 1824px/16
+
+
+// Main color.
+$white: #FFFFFF;
+$blue: #6FB7E9;
+$blue-dark: #3c65e9; // rgb(60, 101, 233)
+$green: #0DB14B; // rgb(13, 177, 75)
+$red: #b13030; // rgb(13, 177, 75)
+
+// Font Weights.
+$light: 300;
+$normal: 400;
+$bold: 700;
+

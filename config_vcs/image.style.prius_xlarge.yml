@@ -1,0 +1,15 @@
+uuid: 31d4597e-7429-428d-b103-3dedf5e2ba01
+langcode: en
+status: true
+dependencies: {  }
+name: prius_xlarge
+label: prius.xlarge
+effects:
+  24e71449-027c-4f96-8b46-70452f2c25f6:
+    uuid: 24e71449-027c-4f96-8b46-70452f2c25f6
+    id: image_scale
+    weight: 1
+    data:
+      width: 1824
+      height: null
+      upscale: false

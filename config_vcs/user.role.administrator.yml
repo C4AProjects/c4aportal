@@ -137,3 +137,7 @@ permissions:
   - 'restful get entity:node'
   - 'restful patch entity:node'
   - 'restful post entity:node'
+  - 'access devel information'
+  - 'execute php code'
+  - 'switch users'
+  - 'access kint'

@@ -1,0 +1,98 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the prius theme.
+ */
+
+use Drupal\Component\Utility\String;
+use Drupal\Component\Utility\Xss;
+use Drupal\Core\Template\Attribute;
+
+/**
+ * Implements hook_preprocess_HOOK() for page.html.twig.
+ *
+ */
+function prius_preprocess_page(&$variables) {
+  $variables['featured'] = TRUE;
+}
+
+/**
+ * Implements hook_css_alter().
+ */
+function prius_css_alter(&$css) {
+
+  // Add CDN FontAwesome (Support from IE8).
+  $fontawesome = '//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css';
+  $css[$fontawesome] = array(
+    'data' => $fontawesome,
+    'type' => 'external',
+    'every_page' => TRUE,
+    'media' => 'all',
+    'preprocess' => FALSE,
+    'group' => CSS_AGGREGATE_THEME,
+    'browsers' => array('IE' => 'gte IE 8'),
+    'weight' => 1,
+  );
+
+  // Add CDN Google fonts.
+  $googlefonts = '//fonts.googleapis.com/css?family=Lato:400italic,600italic,70';
+  $css[$googlefonts] = array(
+    'data' => $googlefonts,
+    'type' => 'external',
+    'every_page' => TRUE,
+    'media' => 'all',
+    'preprocess' => FALSE,
+    'group' => CSS_AGGREGATE_THEME,
+    'browsers' => array('IE' => TRUE, '!IE' => TRUE),
+    'weight' => 2,
+  );
+
+}
+
+/**
+ * Returns HTML for a breadcrumb trail.
+ *
+ * @ingroup themeable
+ */
+function prius_breadcrumb($variables) {
+  // Show breadcrumbs if checked.
+  if (theme_get_setting('breadcrumb') == 1 || TRUE) {
+    // Theme the breadcrumbs.
+    $breadcrumb = $variables['breadcrumb'];
+    if (!empty($breadcrumb)) {
+      $output = '<ul class="breadcrumb"><li>' . implode('</li><li>', $breadcrumb) . '</li></ul>';
+      return $output;
+    }
+  }
+}
+
+/**
+ * Implements hook_page_alter().
+ *
+ * This is another way to include the libraries into the theme.
+ */
+function prius_page_alter(&$page) {
+  // Attach respond library unless disable checkbox is checked.
+  if(theme_get_setting('disable_respond', 'prius') == FALSE) {
+    $page['#attached']['library'][] = 'prius/respond';
+  }
+  // Attach selectivizr library unless disable checkbox is checked.
+  if(theme_get_setting('disable_selectivizr', 'prius') == FALSE) {
+    $page['#attached']['library'][] = 'prius/selectivizr';
+  }
+}
+
+/**
+ * Implements hook_library_alter().
+ */
+function prius_library_alter(array &$library, $name) {
+  // Bug ? hook_library_alter does not seems to be called.
+  if(theme_get_setting('disable_respond', 'prius') == TRUE) {
+  }
+
+  if(theme_get_setting('disable_selectivizr', 'prius') == TRUE) {
+
+  }
+}
+

@@ -11,3 +11,5 @@ permissions:
   - 'use text format restricted_html'
   - 'access comments'
   - 'access site-wide contact form'
+  - 'access devel information'
+  - 'access kint'

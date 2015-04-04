@@ -1,0 +1,111 @@
+/**
+ * @file
+ * Responsive navigation.
+ */
+
+
+/* Mobile First */
+//.container {
+//  margin: 0px auto;
+//  overflow: hidden;
+//  max-width: 100%;
+//  width: 100%;
+//  position: relative;
+//}
+
+header {
+  @include background-image(linear-gradient(#000, rgba(0,0,0,0)));;
+  .container{
+    @include container;
+  }
+  .navigation {
+    @include transition(all .5s ease-out);
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        display: block;
+        text-align: left;
+
+        a {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+#main-wrapper {
+  position: relative;
+  margin: 0 auto;
+  float: left;
+  margin-left: 0;
+  width: 100%;
+
+  .mobile-container {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+@include breakpoint($bp-tablet) {
+  header {
+
+    @include transition(all .5s ease-out);
+    .logo {
+      @include span(3);
+    }
+    .region-primary-menu{
+      @include span(9 last);
+      nav{
+        line-height: 100px;
+        > ul {
+          margin:  0;
+          float: right;
+        }
+
+        ul {
+          li {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+
+  #main-wrapper {
+    float: left;
+    margin-left: 0;
+    width: 100%;
+    .mobile-container {
+      display: none;
+    }
+  }
+}
+
+
+@include breakpoint($bp-desktop) {
+  header {
+    height: 110px;
+    .navigation {
+      line-height: 200px;
+
+      > ul {
+        @include transition(all .5s ease-out);
+        margin: 100px 0;
+      }
+    }
+  }
+
+  #main-wrapper {
+
+  }
+}
+
+
+@include breakpoint($bp-large) {
+
+}

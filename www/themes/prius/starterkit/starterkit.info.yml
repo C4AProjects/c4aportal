@@ -1,0 +1,16 @@
+name: STARTERKIT
+type: theme
+description: 'HTML5, SASS, Responsive grid base theme.'
+tags: 'responsive'
+# version: VERSION
+# core: 8.x
+base theme: prius
+
+libraries:
+  - starterkit/global-styling
+
+# Information added by Drupal.org packaging script on 2015-01-04
+version: '8.x-1.0-beta4'
+core: '8.x'
+project: 'prius'
+datestamp: 1420369986

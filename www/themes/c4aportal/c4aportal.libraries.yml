@@ -1,0 +1,22 @@
+# Global styling.
+global-styling:
+  version: VERSION
+  css:
+    theme:
+      css/style.css: {}
+      css/print.css: { media: print }
+  js:
+    js/c4aportal.js: {}
+
+#bxslider
+jquery.bxslider:
+  version: 4.x
+  css:
+    theme:
+      /libraries/jquery.bxslider/jquery.bxslider.css: {}
+  js:
+    /libraries/jquery.bxslider/jquery.bxslider.js: {}
+  dependencies:
+      - core/jquery
+
+

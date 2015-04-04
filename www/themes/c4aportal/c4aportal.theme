@@ -1,0 +1,43 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: ousmanesamba
+ * Date: 4/2/15
+ * Time: 9:23 AM
+ */
+/**
+ *
+ */
+function c4aportal_preprocess_html($vars){
+}
+/**
+ * @param $vars
+ * Hook_preprocess_page
+ */
+function c4aportal_preprocess_page(&$vars){
+    global $base_url;
+    $vars['logo'] = $base_url .'/'. drupal_get_path('theme','c4aportal').'/logo.png';
+    if($vars['is_front']){
+        $vars['slideslogan'] = array(
+            "Home of the <span class='bold'>largest network</span> of <span class='upper'>african coders</span>",
+            "More than  <span class='bold'>code</span> practical<span class='bold'> Solutions</span>"
+        );
+        $vars['#attached']['library'][] = "c4aportal/jquery.bxslider";
+        $vars['title'] = "";
+        $vars['page']['content']="";
+    }
+}
+
+function c4aportal_preprocess_block(&$vars){
+    $vars['attributes']['class'][] = 'menu--main';
+//    kint($vars);
+}
+
+function c4aportal_css_alter(&$css){
+//    kint($css);
+    $css['jquery.bxslider.css']['weight'] = 195;
+}
+
+function c4aportal_js_alter(&$js){
+    $js['libraries/jquery.bxslider/jquery.bxslider.js']['weight'] = 0.004;
+}

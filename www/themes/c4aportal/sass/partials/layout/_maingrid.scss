@@ -1,0 +1,67 @@
+/**
+ * @file
+ * Main Grid.
+ */
+.wrapper{
+  overflow: hidden;
+  background: url("../homebg.jpg") center no-repeat;
+}
+
+/* Mobile First */
+#main {
+  @include container(95%);
+
+  #aside_left {
+    display: none;
+  }
+
+  #content {
+    @include span (12 of 12);
+  }
+
+  #aside_right {
+    display: none;
+  }
+}
+
+
+@include breakpoint($bp-tablet) {
+  #main {
+    @include container(94%);
+  }
+}
+
+
+@include breakpoint($bp-desktop) {
+  #main {
+    color:#ffffff;
+    .container{
+      @include container;
+    }
+
+
+    #aside_left {
+    }
+
+    #content {
+      @include span (9 of 12);
+    }
+
+    #aside_right {
+      @include span (3 at 10 of 12);
+      display: block;
+    }
+  }
+  #footer{
+    .container{
+      @include container;
+    }
+  }
+}
+
+
+@include breakpoint($bp-large) {
+  #main {
+    @include container(92%);
+  }
+}

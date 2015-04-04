@@ -1,0 +1,30 @@
+prius.small:
+  label: mobile
+  mediaQuery: '(min-width: 30em)'
+  weight: 0
+  multipliers:
+    - 1x
+prius.tablet:
+  label: wide
+  mediaQuery: 'screen and (min-width: 48em)'
+  weight: 1
+  multipliers:
+    - 1x
+prius.desktop:
+  label: wide
+  mediaQuery: 'screen and (min-width: 62em)'
+  weight: 1
+  multipliers:
+    - 1x
+prius.large:
+  label: wide
+  mediaQuery: 'screen and (min-width: 76.5em)'
+  weight: 1
+  multipliers:
+    - 1x
+prius.xlarge:
+  label: wide
+  mediaQuery: 'screen and (min-width: 114em)'
+  weight: 1
+  multipliers:
+    - 1x

@@ -1,0 +1,81 @@
+/**
+ * @file
+ * Variables.
+ */
+
+// Baseline: 100% = 1 em ~= 16px ~= 14pt
+
+// Breakpoint.
+$bp-small: 30em; // 480px/16
+$bp-tablet: 48em; // 768px/16
+$bp-desktop: 62em; // 992px/16
+$bp-large: 76.5em; // 1224px/16
+$bp-xlarge: 114em; // 1824px/16
+
+// Fonts.
+$font-family-default: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-text:  "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-alternative: Georgia, Times, sans-serif;
+
+// Main color.
+$blue: #241F55;
+$green: #0DB14B;
+
+// Font Weights.
+$light: 300;
+$normal: 400;
+$bold: 700;
+
+// Links.
+$linkColor: #0063a9;
+$linkHover: darken($linkColor, 5%);
+$linkVisited: darken($linkColor, 15%);
+$linkFocus: $linkHover;
+$linkActive: $linkFocus;
+
+// Compass Vertical Rhythm setup.
+$base-font-size: 20px;
+$base-line-height: 32px;
+$rhythm-unit: "rem";
+$rem-with-px-fallback: true;
+
+// The type-scale Map contains the whole type scale.
+// Add your own sizes or modify these, they will be available in the type-scale mixin for use.
+$type-scale: (
+    tiny: (
+        font-size: 13px,
+        base-lines: 0.5
+    ),
+    small: (
+        font-size: 16px,
+        base-lines: 0.75
+    ),
+    base: (
+        font-size: $base-font-size,
+        base-lines: 1
+    ),
+    medium: (
+        font-size: 25px,
+        base-lines: 1
+    ),
+    large: (
+        font-size: 31px,
+        base-lines: 1.5
+    ),
+    xlarge: (
+        font-size: 39px,
+        base-lines: 1.5
+    ),
+    xxlarge: (
+        font-size: 49px,
+        base-lines: 2
+    )
+);
+
+$type-weight: (
+    thin: 200,
+    light: 300,
+    regular: 400,
+    bold: 700,
+    black: 900
+);

@@ -1,0 +1,7 @@
+# Global styling.
+global-styling:
+  version: VERSION
+  css:
+    theme:
+      css/starterstyle.css: {}
+      css/starterprint.css: { media: print }

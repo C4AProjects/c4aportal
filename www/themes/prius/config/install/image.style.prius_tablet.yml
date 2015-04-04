@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies: {  }
+name: prius_tablet
+label: prius.tablet
+effects:
+  fdc86fab-cbf7-4779-b101-1e1f0f47bb67:
+    uuid: fdc86fab-cbf7-4779-b101-1e1f0f47bb67
+    id: image_scale
+    weight: 1
+    data:
+      width: 768
+      height: null
+      upscale: false
+third_party_settings: {  }

@@ -1,0 +1,23 @@
+uuid: f4812238-62af-41f8-bd19-25fceb16d226
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - prius
+id: prius_powered
+theme: prius
+region: help
+weight: 10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+  cache:
+    max_age: 0
+    contexts: {  }
+visibility: {  }

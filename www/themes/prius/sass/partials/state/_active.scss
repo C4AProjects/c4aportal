@@ -1,0 +1,38 @@
+/**
+ * @file
+ * Active navigation.
+ */
+
+body.active {
+
+  header {
+    margin-left: 0;
+  }
+
+  #main-wrapper:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+  }
+
+  #main-wrapper {
+    margin-right: -100%
+  }
+
+}
+
+@include breakpoint($bp-tablet) {
+  body.active {
+    header {
+      margin-left: 0;
+    }
+
+    #main-wrapper {
+      margin-right: -100%;
+    }
+  }
+}

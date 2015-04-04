@@ -1,0 +1,23 @@
+uuid: 09c1ee65-1f4c-43ca-963b-59a7622f2da4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - prius
+id: prius_content
+theme: prius
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+  cache:
+    max_age: 0
+    contexts: {  }
+visibility: {  }

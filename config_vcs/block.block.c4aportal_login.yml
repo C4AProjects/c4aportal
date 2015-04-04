@@ -1,0 +1,23 @@
+uuid: 02076f4f-0856-478f-b000-a7c567fd20cc
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - c4aportal
+id: c4aportal_login
+theme: c4aportal
+region: sidebar_first
+weight: 0
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'User login'
+  provider: user
+  label_display: visible
+  cache:
+    max_age: 0
+    contexts: {  }
+visibility: {  }

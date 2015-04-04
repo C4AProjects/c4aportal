@@ -1,0 +1,23 @@
+uuid: 9c24fc52-eca7-41fe-8e00-ccbb80f201be
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - c4aportal
+id: c4aportal_search
+theme: c4aportal
+region: sidebar_first
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+  cache:
+    max_age: 0
+    contexts: {  }
+visibility: {  }

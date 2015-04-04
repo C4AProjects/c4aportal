@@ -1,0 +1,27 @@
+uuid: b22684f4-d915-491f-8000-c9c2c7ff2494
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - c4aportal
+id: c4aportal_main_menu
+theme: c4aportal
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  cache:
+    max_age: -1
+    contexts: {  }
+  level: 1
+  depth: 1
+visibility: {  }

@@ -1,0 +1,38 @@
+/**
+ * @file
+ * Scrolling.
+ */
+
+/* Mobile First */
+
+
+@include breakpoint($bp-tablet) {
+  .scrolling {
+    header {
+      height: 100px;
+    }
+  }
+}
+
+
+@include breakpoint($bp-desktop) {
+  .scrolling {
+    #logo {
+      line-height: 100px;
+      font-size: 2em;
+    }
+    header {
+      .navigation {
+        line-height: 100px;
+
+        > ul {
+          margin: 50px 0;
+        }
+      }
+    }
+    #main-wrapper {
+      //padding-top: 100px;
+    }
+  }
+
+}

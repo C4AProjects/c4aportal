@@ -1,0 +1,128 @@
+/**
+ * @file
+ * Responsive navigation.
+ */
+
+
+/* Mobile First */
+.container {
+  margin: 0px auto;
+  overflow: hidden;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+}
+
+header {
+  display: block;
+  position: relative;
+  float: left;
+  margin-left: -100%;
+  width: 220px;
+  z-index: 2;
+  padding: 0;
+
+  .navigation {
+    @include transition(all .5s ease-out);
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        display: block;
+        text-align: left;
+
+        a {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+#main-wrapper {
+  position: relative;
+  margin: 0 auto;
+  float: left;
+  margin-left: 0;
+  width: 100%;
+
+  .mobile-container {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+@include breakpoint($bp-tablet) {
+  header {
+    float: none;
+    margin-left: 0;
+    width: 100%;
+    z-index: 2;
+    padding: 0;
+    position: fixed;
+    top:0;
+    height: 100px;
+    @include transition(all .5s ease-out);
+    background-color: white;
+
+    .logo {
+      float: left;
+      width: auto;
+    }
+
+    .navigation {
+      float: right;
+      width: auto;
+      line-height: 100px;
+
+      > ul {
+        margin: 50px 0;
+      }
+
+      ul {
+        li {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  #main-wrapper {
+    float: left;
+    margin-left: 0;
+    width: 100%;
+    padding-top: 200px;
+
+    .mobile-container {
+      display: none;
+    }
+  }
+}
+
+
+@include breakpoint($bp-desktop) {
+  header {
+    height: 200px;
+
+    .navigation {
+      line-height: 200px;
+
+      > ul {
+        @include transition(all .5s ease-out);
+        margin: 100px 0;
+      }
+    }
+  }
+
+  #main-wrapper {
+    padding-top: 300px;
+  }
+}
+
+
+@include breakpoint($bp-large) {
+
+}

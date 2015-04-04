@@ -1,0 +1,11 @@
+# Schema for the configuration files of the Prius theme.
+# @todo Module-specific settings should be defined by the module:
+# https://www.drupal.org/node/2382645
+
+prius.settings:
+  type: theme_settings
+  label: 'Prius settings'
+  mapping:
+    shortcut_module_link:
+      type: boolean
+      label: 'Shortcut module link'

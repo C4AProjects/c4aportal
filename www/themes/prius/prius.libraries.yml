@@ -1,0 +1,41 @@
+## Global styling.
+#global-styling:
+#  version: VERSION
+#  css:
+#    theme:
+#      css/style.css: {}
+#      css/print.css: { media: print }
+
+# Custom js and dependencies.
+corescripts:
+  version: VERSION
+  js:
+    js/build/production.min.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
+    - core/modernizr
+
+# Min/max-width media query polyfill for IE 6-8.
+respond:
+  remote: https://github.com/scottjehl/Respond
+  version: 1.4.2
+  license:
+    name: MIT
+    url: https://github.com/scottjehl/Respond/blob/master/LICENSE-MIT
+    gpl-compatible: true
+  js:
+    //cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js: { every_page: true, weight: -1, browsers: { IE: 'lte IE 8', '!IE': false } }
+
+# Emulates CSS3 pseudo-classes and attribute selectors for IE 6-8.
+selectivizr:
+  remote: http://selectivizr.com/
+  version: 1.0.2
+  license:
+    name: MIT
+    url: http://opensource.org/licenses/MIT
+    gpl-compatible: true
+  js:
+    //cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js: { every_page: true, weight: -1, browsers: { IE: 'lte IE 8', '!IE': false } }

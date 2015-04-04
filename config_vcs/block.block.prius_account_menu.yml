@@ -1,0 +1,27 @@
+uuid: fd454cb5-d934-4cb9-9b00-e31a2a0b2dcc
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - prius
+id: prius_account_menu
+theme: prius
+region: help
+weight: 0
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  cache:
+    max_age: -1
+    contexts: {  }
+  level: 1
+  depth: 1
+visibility: {  }
