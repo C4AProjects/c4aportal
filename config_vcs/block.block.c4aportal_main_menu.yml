@@ -11,7 +11,7 @@ dependencies:
 id: c4aportal_main_menu
 theme: c4aportal
 region: primary_menu
-weight: 0
+weight: -6
 provider: null
 plugin: 'system_menu_block:main'
 settings:

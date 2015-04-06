@@ -1,0 +1,4 @@
+name: c4a block
+type: module
+description: 'Contains c4a block definition.'
+core: 8.x

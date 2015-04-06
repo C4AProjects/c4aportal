@@ -1,6 +1,6 @@
 uuid: aff119c3-8cb2-420e-9601-1a928fd798b9
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.tools
@@ -10,7 +10,7 @@ dependencies:
     - c4aportal
 id: c4aportal_tools
 theme: c4aportal
-region: sidebar_first
+region: '-1'
 weight: 0
 provider: null
 plugin: 'system_menu_block:tools'

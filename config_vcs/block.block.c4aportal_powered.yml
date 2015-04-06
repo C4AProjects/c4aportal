@@ -1,6 +1,6 @@
 uuid: ebb5baa4-20ba-45ee-a900-d645d7a756f2
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -8,8 +8,8 @@ dependencies:
     - c4aportal
 id: c4aportal_powered
 theme: c4aportal
-region: sidebar_first
-weight: 10
+region: '-1'
+weight: -6
 provider: null
 plugin: system_powered_by_block
 settings:

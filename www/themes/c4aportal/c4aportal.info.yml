@@ -10,6 +10,24 @@ libraries:
   - c4aportal/global-styling
 #  - c4aportal/jquery-bxslider
 
+
+regions:
+  help: Help
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  primary_menu: 'Primary menu'
+  highlighted: Highlighted
+  aside_left: 'Aside Left'
+  content_top: 'Content Top'
+  content: Content
+  content_bottom: 'Content Bottom'
+  aside_right: 'Aside Right'
+  footer_firstcolumn: 'Footer first column'
+  footer_secondcolumn: 'Footer second column'
+  footer_thirdcolumn: 'Footer third column'
+  footer_fourthcolumn: 'Footer fourth column'
+  footer: Footer
+
 # Information added by Drupal.org packaging script on 2015-01-04
 version: '8.x-1.0-beta4'
 core: '8.x'

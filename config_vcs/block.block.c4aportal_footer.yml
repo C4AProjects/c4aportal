@@ -1,6 +1,6 @@
 uuid: c94fa888-2be0-4060-8706-6e001db7fce9
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.footer
@@ -10,7 +10,7 @@ dependencies:
     - c4aportal
 id: c4aportal_footer
 theme: c4aportal
-region: sidebar_first
+region: '-1'
 weight: 0
 provider: null
 plugin: 'system_menu_block:footer'

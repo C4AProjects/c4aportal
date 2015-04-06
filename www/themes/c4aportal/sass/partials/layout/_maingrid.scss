@@ -4,12 +4,12 @@
  */
 .wrapper{
   overflow: hidden;
-  background: url("../homebg.jpg") center no-repeat;
+  background:#000000 url("../homebg.jpg") top center no-repeat;
 }
 
 /* Mobile First */
 #main {
-  @include container(95%);
+  @include container(100%);
 
   #aside_left {
     display: none;
@@ -27,12 +27,23 @@
 
 @include breakpoint($bp-tablet) {
   #main {
-    @include container(94%);
+    @include container(100%);
   }
 }
 
 
 @include breakpoint($bp-desktop) {
+  .highlighted{
+    .region-highlighted{
+      #block-homeemployerblock{
+        @include span (4 at 7 of 12 isolate);
+      }
+      #block-homedeveloperblock{
+
+        @include span (4 at 3 of 12 isolate);
+      }
+    }
+  }
   #main {
     color:#ffffff;
     .container{
@@ -44,7 +55,7 @@
     }
 
     #content {
-      @include span (9 of 12);
+//      @include span (9 of 12);
     }
 
     #aside_right {
@@ -54,7 +65,7 @@
   }
   #footer{
     .container{
-      @include container;
+      @include container(100%);
     }
   }
 }
@@ -62,6 +73,6 @@
 
 @include breakpoint($bp-large) {
   #main {
-    @include container(92%);
+    @include container(100%);
   }
 }

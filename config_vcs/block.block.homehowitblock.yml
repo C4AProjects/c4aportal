@@ -1,0 +1,29 @@
+uuid: 2e70a993-a34d-4d6c-bc55-857da4802e40
+langcode: en
+status: true
+dependencies:
+  module:
+    - c4a_blocks
+    - system
+  theme:
+    - c4aportal
+id: homehowitblock
+theme: c4aportal
+region: content_top
+weight: -8
+provider: null
+plugin: home_how_it_block
+settings:
+  id: home_how_it_block
+  label: 'Home How it Block'
+  provider: c4a_blocks
+  label_display: '0'
+  cache:
+    max_age: 0
+    contexts: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

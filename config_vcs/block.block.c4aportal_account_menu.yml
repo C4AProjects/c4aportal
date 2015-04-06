@@ -1,6 +1,6 @@
 uuid: c5488ae9-b68b-483b-9038-56d4e6ee4af8
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.account
@@ -10,7 +10,7 @@ dependencies:
     - c4aportal
 id: c4aportal_account_menu
 theme: c4aportal
-region: secondary_menu
+region: '-1'
 weight: 0
 provider: null
 plugin: 'system_menu_block:account'

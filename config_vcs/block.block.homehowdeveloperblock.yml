@@ -1,0 +1,29 @@
+uuid: 619a3c37-6d7e-4478-a300-aef1c5773e58
+langcode: en
+status: true
+dependencies:
+  module:
+    - c4a_blocks
+    - system
+  theme:
+    - c4aportal
+id: homehowdeveloperblock
+theme: c4aportal
+region: content
+weight: -8
+provider: null
+plugin: home_how_developer
+settings:
+  id: home_how_developer
+  label: 'Home How Developer Block'
+  provider: c4a_blocks
+  label_display: '0'
+  cache:
+    max_age: 0
+    contexts: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

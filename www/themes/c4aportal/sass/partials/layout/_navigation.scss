@@ -13,11 +13,9 @@
 //  position: relative;
 //}
 
+
 header {
   @include background-image(linear-gradient(#000, rgba(0,0,0,0)));;
-  .container{
-    @include container;
-  }
   .navigation {
     @include transition(all .5s ease-out);
 
@@ -53,7 +51,6 @@ header {
 
 @include breakpoint($bp-tablet) {
   header {
-
     @include transition(all .5s ease-out);
     .logo {
       @include span(3);
@@ -89,10 +86,8 @@ header {
 
 @include breakpoint($bp-desktop) {
   header {
-    height: 110px;
     .navigation {
       line-height: 200px;
-
       > ul {
         @include transition(all .5s ease-out);
         margin: 100px 0;

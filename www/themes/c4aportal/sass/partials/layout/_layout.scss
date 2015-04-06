@@ -4,6 +4,9 @@
  */
 
 // @import 'section_separators';
+.container{
+  @include container;
+}
 @import 'navigation';
 @import 'maingrid';
 @import 'footergrid';

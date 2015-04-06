@@ -1,0 +1,29 @@
+uuid: 1fe94e84-7a2d-4d41-872a-42da37d728b0
+langcode: en
+status: true
+dependencies:
+  module:
+    - c4a_blocks
+    - system
+  theme:
+    - c4aportal
+id: homeemployerblock
+theme: c4aportal
+region: highlighted
+weight: -5
+provider: null
+plugin: home_menu_employer
+settings:
+  id: home_menu_employer
+  label: 'Home Employer Block'
+  provider: c4a_blocks
+  label_display: '0'
+  cache:
+    max_age: 0
+    contexts: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

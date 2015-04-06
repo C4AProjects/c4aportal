@@ -9,7 +9,7 @@ dependencies:
 id: c4aportal_content
 theme: c4aportal
 region: content
-weight: 0
+weight: -5
 provider: null
 plugin: system_main_block
 settings:

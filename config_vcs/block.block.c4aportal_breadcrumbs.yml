@@ -1,6 +1,6 @@
 uuid: b105e99a-8104-4fc9-bc57-87b6c575f03e
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -8,7 +8,7 @@ dependencies:
     - c4aportal
 id: c4aportal_breadcrumbs
 theme: c4aportal
-region: breadcrumb
+region: '-1'
 weight: 0
 provider: null
 plugin: system_breadcrumb_block

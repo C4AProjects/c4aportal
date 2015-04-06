@@ -103,17 +103,6 @@
 
     <div class="highlighted">
       <div class="container">
-        {{ page.highlighted }}
-      </div>
-    </div>
-
-    <main id="main" role="main">
-      <div class="container">
-        {% if page.aside_left %}
-          <aside id="aside_left">
-            {{ page.aside_left }}
-          </aside>
-        {% endif %}
         {% if slideslogan %}
           <div class="slider">
             <ul class="bxslider">
@@ -121,9 +110,30 @@
                 <li><div class="item">{{ slogan|raw }}</div></li>
               {% endfor %}
             </ul>
+
+            <div class="what">
+              <span class=" ico fa fa-angle-down"></span>
+              <span>How do you want to proceed ?</span>
+            </div>
           </div>
         {% endif %}
-
+        {{ page.highlighted }}
+      </div>
+    </div>
+    {% if page.content_top %}
+      <div id="content_top">
+        <div class="container">
+          {{ page.content_top }}
+        </div>
+      </div>
+    {% endif %}
+    <main id="main" role="main">
+      <div class="container">
+        {% if page.aside_left %}
+          <aside id="aside_left">
+            {{ page.aside_left }}
+          </aside>
+        {% endif %}
         {% if page.content %}
           <div id="content">
 
@@ -154,6 +164,13 @@
         {% endif %}
       </div>
     </main>
+    {% if page.content_bottom %}
+      <div id="content_bottom">
+        <div class="container">
+          {{ page.content_bottom }}
+        </div>
+      </div>
+    {% endif %}
 
     <footer id="footer" role="footer">
       <div class="container">

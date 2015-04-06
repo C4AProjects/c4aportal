@@ -1,0 +1,29 @@
+uuid: 2ad02c23-9e41-4581-9a08-8b97ec7e2195
+langcode: en
+status: true
+dependencies:
+  module:
+    - c4a_blocks
+    - system
+  theme:
+    - c4aportal
+id: homehowemployer
+theme: c4aportal
+region: content_bottom
+weight: -8
+provider: null
+plugin: home_how_employer
+settings:
+  id: home_how_employer
+  label: 'Home How Employer'
+  provider: c4a_blocks
+  label_display: '0'
+  cache:
+    max_age: 0
+    contexts: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

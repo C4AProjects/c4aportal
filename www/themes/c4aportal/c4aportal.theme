@@ -24,7 +24,8 @@ function c4aportal_preprocess_page(&$vars){
         );
         $vars['#attached']['library'][] = "c4aportal/jquery.bxslider";
         $vars['title'] = "";
-        $vars['page']['content']="";
+        $vars['page']['content']['c4aportal_content']="";
+//        kint($vars['page']['content']['c4aportal_content']);
     }
 }
 
