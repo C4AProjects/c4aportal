@@ -1,0 +1,32 @@
+uuid: 3497ae7d-8121-41ac-bd00-e2d06f07b201
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_project_type
+field_name: field_project_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: web
+      label: Web
+    -
+      value: mobile
+      label: Mobile
+    -
+      value: desktop
+      label: Desktop
+    -
+      value: others
+      label: Other
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false

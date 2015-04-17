@@ -2,7 +2,7 @@ country:
   default: SN
 first_day: 0
 timezone:
-  default: UTC
+  default: Africa/Dakar
   user:
     configurable: true
     warn: false

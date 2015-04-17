@@ -1,0 +1,27 @@
+uuid: a0156a86-2f7c-4506-8200-ca0d2835f308
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.home_page_project
+  module:
+    - views
+  theme:
+    - c4aportal
+id: views_block__home_page_project_block_1
+theme: c4aportal
+region: content_bottom2
+weight: -8
+provider: null
+plugin: 'views_block:home_page_project-block_1'
+settings:
+  id: 'views_block:home_page_project-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  cache:
+    max_age: 0
+    contexts: {  }
+  views_label: ''
+  items_per_page: none
+visibility: {  }

@@ -1,0 +1,29 @@
+uuid: 7b1e7c47-2e77-4343-a900-f7b6649553b1
+langcode: en
+status: true
+dependencies:
+  module:
+    - c4a_blocks
+    - system
+  theme:
+    - c4aportal
+id: homehowwework
+theme: c4aportal
+region: content_bottom2
+weight: -9
+provider: null
+plugin: who_we_are
+settings:
+  id: who_we_are
+  label: 'Home How we work'
+  provider: c4a_blocks
+  label_display: '0'
+  cache:
+    max_age: 0
+    contexts: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
