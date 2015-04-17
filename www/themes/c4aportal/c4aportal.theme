@@ -8,7 +8,22 @@
 /**
  *
  */
-function c4aportal_preprocess_html($vars){
+function c4aportal_preprocess_html(&$variables){
+    // Add information about the number of sidebars.
+    if (!empty($variables['page']['aside_left']) && !empty($variables['page']['aside_right'])) {
+        $variables['attributes']['class'][] = 'layout-two-sidebars';
+    }
+    elseif (!empty($variables['page']['aside_left'])) {
+        $variables['attributes']['class'][] = 'layout-one-sidebar';
+        $variables['attributes']['class'][] = 'layout-sidebar-first';
+    }
+    elseif (!empty($variables['page']['sidebar_right'])) {
+        $variables['attributes']['class'][] = 'layout-one-sidebar';
+        $variables['attributes']['class'][] = 'layout-sidebar-second';
+    }
+    else {
+        $variables['attributes']['class'][] = 'layout-no-sidebars';
+    }
 }
 /**
  * @param $vars
@@ -36,9 +51,13 @@ function c4aportal_preprocess_block(&$vars){
 
 function c4aportal_css_alter(&$css){
 //    kint($css);
-    $css['jquery.bxslider.css']['weight'] = 195;
+    if($css['jquery.bxslider.css']){
+        $css['jquery.bxslider.css']['weight'] = 195;
+    }
 }
 
 function c4aportal_js_alter(&$js){
-    $js['libraries/jquery.bxslider/jquery.bxslider.js']['weight'] = 0.004;
+    if($js['libraries/jquery.bxslider/jquery.bxslider.js']){
+        $js['libraries/jquery.bxslider/jquery.bxslider.js']['weight'] = 0.004;
+    }
 }

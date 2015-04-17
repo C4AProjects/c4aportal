@@ -21,6 +21,7 @@ regions:
   content_top: 'Content Top'
   content: Content
   content_bottom: 'Content Bottom'
+  content_bottom2: 'Content Bottom2'
   aside_right: 'Aside Right'
   footer_firstcolumn: 'Footer first column'
   footer_secondcolumn: 'Footer second column'

@@ -12,6 +12,12 @@
                 auto: true,
                 speed:2000
             });
+            $('.project-slider').bxSlider({
+                captions: false,
+                controls: false,
+                auto: true,
+                speed:2000
+            });
         }
     };
 })(jQuery, Drupal, window);

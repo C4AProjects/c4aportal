@@ -147,3 +147,99 @@
       }
   }
 }
+
+#content_bottom2{
+  background: #f7f7f7;
+  .container{
+    .region-content-bottom2{
+      #block-homehowwework{
+        @include span (8);
+        .content{
+          .who_title{
+            text-align: right;
+            color: #22252b;
+            font-weight: bold;
+            padding: 30px 125px;
+            text-transform: uppercase;
+          }
+          .who_block{
+            span.title{
+              font-weight: 200;
+              font-size: 1.3em;
+              padding: 10px 0px;
+              color: #4d5a68;
+              width: 100%;
+              display: block;
+            }
+            span.desc{
+              color: #7f8c8d;
+              font-size: 0.9em;
+              font-weight: 100;
+
+            }
+            .bplan,.bdesign,.bbuild{
+              margin: 30px 10px;
+              overflow: hidden;
+              .ico{
+                @include span (4);
+                height: 115px;
+              }
+              .content{
+                @include span (8 last);
+                .head{
+                  color: #34495e;
+                  font-weight: 400;
+                  font-size: 0.9em;
+                  display: block;
+                  padding: 10px 0;
+                }
+                .text{
+                  color: #7f8c8d;
+                  font-size: 0.75em;
+                  font-weight: 100;
+                }
+
+              }
+            }
+            .bplan{
+              .ico{
+                background: url("../images/plan.png") center no-repeat;
+              }
+            }
+            .bdesign{
+              .ico{
+                background: url("../images/des.png") center no-repeat;
+              }
+            }
+            .bbuild{
+              .ico{
+                background: url("../images/build.png") center no-repeat;
+              }
+            }
+
+          }
+          .left{
+            padding: 10px 40px 10px 10px;
+//            @include span (6);
+          }
+
+        }
+      }
+      #block-views-block-home-page-project-block-1{
+        @include span(4 last);
+        padding-top: 85px;
+        .bx-wrapper .bx-viewport{
+          box-shadow: initial;
+          border: none;
+          background: none;
+          img{
+            max-width: 100%;
+            display: block;
+            padding: 0 25px;
+          }
+        }
+      }
+    }
+
+  }
+}

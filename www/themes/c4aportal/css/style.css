@@ -1111,6 +1111,107 @@ header .navigation ul li a {
   background: url("../images/wm.png") no-repeat center;
 }
 
+/* line 151, ../sass/partials/component/_content.scss */
+#content_bottom2 {
+  background: #f7f7f7;
+}
+/* line 155, ../sass/partials/component/_content.scss */
+#content_bottom2 .container .region-content-bottom2 #block-homehowwework {
+  width: 66.10169%;
+  float: left;
+  margin-right: 1.69492%;
+}
+/* line 158, ../sass/partials/component/_content.scss */
+#content_bottom2 .container .region-content-bottom2 #block-homehowwework .content .who_title {
+  text-align: right;
+  color: #22252b;
+  font-weight: bold;
+  padding: 30px 125px;
+  text-transform: uppercase;
+}
+/* line 166, ../sass/partials/component/_content.scss */
+#content_bottom2 .container .region-content-bottom2 #block-homehowwework .content .who_block span.title {
+  font-weight: 200;
+  font-size: 1.3em;
+  padding: 10px 0px;
+  color: #4d5a68;
+  width: 100%;
+  display: block;
+}
+/* line 174, ../sass/partials/component/_content.scss */
+#content_bottom2 .container .region-content-bottom2 #block-homehowwework .content .who_block span.desc {
+  color: #7f8c8d;
+  font-size: 0.9em;
+  font-weight: 100;
+}
+/* line 180, ../sass/partials/component/_content.scss */
+#content_bottom2 .container .region-content-bottom2 #block-homehowwework .content .who_block .bplan, #content_bottom2 .container .region-content-bottom2 #block-homehowwework .content .who_block .bdesign, #content_bottom2 .container .region-content-bottom2 #block-homehowwework .content .who_block .bbuild {
+  margin: 30px 10px;
+  overflow: hidden;
+}
+/* line 183, ../sass/partials/component/_content.scss */
+#content_bottom2 .container .region-content-bottom2 #block-homehowwework .content .who_block .bplan .ico, #content_bottom2 .container .region-content-bottom2 #block-homehowwework .content .who_block .bdesign .ico, #content_bottom2 .container .region-content-bottom2 #block-homehowwework .content .who_block .bbuild .ico {
+  width: 32.20339%;
+  float: left;
+  margin-right: 1.69492%;
+  height: 115px;
+}
+/* line 187, ../sass/partials/component/_content.scss */
+#content_bottom2 .container .region-content-bottom2 #block-homehowwework .content .who_block .bplan .content, #content_bottom2 .container .region-content-bottom2 #block-homehowwework .content .who_block .bdesign .content, #content_bottom2 .container .region-content-bottom2 #block-homehowwework .content .who_block .bbuild .content {
+  width: 66.10169%;
+  float: right;
+  margin-right: 0;
+}
+/* line 189, ../sass/partials/component/_content.scss */
+#content_bottom2 .container .region-content-bottom2 #block-homehowwework .content .who_block .bplan .content .head, #content_bottom2 .container .region-content-bottom2 #block-homehowwework .content .who_block .bdesign .content .head, #content_bottom2 .container .region-content-bottom2 #block-homehowwework .content .who_block .bbuild .content .head {
+  color: #34495e;
+  font-weight: 400;
+  font-size: 0.9em;
+  display: block;
+  padding: 10px 0;
+}
+/* line 196, ../sass/partials/component/_content.scss */
+#content_bottom2 .container .region-content-bottom2 #block-homehowwework .content .who_block .bplan .content .text, #content_bottom2 .container .region-content-bottom2 #block-homehowwework .content .who_block .bdesign .content .text, #content_bottom2 .container .region-content-bottom2 #block-homehowwework .content .who_block .bbuild .content .text {
+  color: #7f8c8d;
+  font-size: 0.75em;
+  font-weight: 100;
+}
+/* line 205, ../sass/partials/component/_content.scss */
+#content_bottom2 .container .region-content-bottom2 #block-homehowwework .content .who_block .bplan .ico {
+  background: url("../images/plan.png") center no-repeat;
+}
+/* line 210, ../sass/partials/component/_content.scss */
+#content_bottom2 .container .region-content-bottom2 #block-homehowwework .content .who_block .bdesign .ico {
+  background: url("../images/des.png") center no-repeat;
+}
+/* line 215, ../sass/partials/component/_content.scss */
+#content_bottom2 .container .region-content-bottom2 #block-homehowwework .content .who_block .bbuild .ico {
+  background: url("../images/build.png") center no-repeat;
+}
+/* line 221, ../sass/partials/component/_content.scss */
+#content_bottom2 .container .region-content-bottom2 #block-homehowwework .content .left {
+  padding: 10px 40px 10px 10px;
+}
+/* line 228, ../sass/partials/component/_content.scss */
+#content_bottom2 .container .region-content-bottom2 #block-views-block-home-page-project-block-1 {
+  width: 32.20339%;
+  float: right;
+  margin-right: 0;
+  padding-top: 85px;
+}
+/* line 231, ../sass/partials/component/_content.scss */
+#content_bottom2 .container .region-content-bottom2 #block-views-block-home-page-project-block-1 .bx-wrapper .bx-viewport {
+  box-shadow: initial;
+  border: none;
+  background: none;
+}
+/* line 235, ../sass/partials/component/_content.scss */
+#content_bottom2 .container .region-content-bottom2 #block-views-block-home-page-project-block-1 .bx-wrapper .bx-viewport img {
+  max-width: 100%;
+  display: block;
+  padding: 0 25px;
+}
+
 /**
  * @file
  * Admin Toolbar.
