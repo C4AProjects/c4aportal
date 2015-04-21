@@ -31,7 +31,7 @@ class WhereWeAreBlock extends BlockBase {
         return array(
             '#type' => '#markup',
             '#markup' => '
-                          <div class="who_title">Where we are</div>
+                          <div class="who_title">Our Network</div>
                           <div class="block_container">
 
                             <div class="us tooltip" title="USA" >
