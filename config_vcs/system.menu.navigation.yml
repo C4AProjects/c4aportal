@@ -1,0 +1,8 @@
+uuid: fbc299ca-9e1c-4baa-a808-08fd7164a36c
+langcode: en
+status: true
+dependencies: {  }
+id: navigation
+label: Navigation
+description: 'Footer menu'
+locked: false

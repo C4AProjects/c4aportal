@@ -1,0 +1,23 @@
+uuid: f10aec11-595e-41e8-a600-f3a7ad89488c
+langcode: en
+status: true
+dependencies:
+  module:
+    - c4a_blocks
+  theme:
+    - c4aportal
+id: connectwithus
+theme: c4aportal
+region: footer
+weight: -10
+provider: null
+plugin: connect_with_us
+settings:
+  id: connect_with_us
+  label: 'Connect with us'
+  provider: c4a_blocks
+  label_display: visible
+  cache:
+    max_age: 0
+    contexts: {  }
+visibility: {  }

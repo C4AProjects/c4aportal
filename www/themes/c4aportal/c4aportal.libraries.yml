@@ -19,4 +19,14 @@ jquery.bxslider:
   dependencies:
       - core/jquery
 
+#tooltipster
+jquery.tooltipster:
+  version: 4.x
+  css:
+    theme:
+      /libraries/tooltipster/css/tooltipster.css: {}
+  js:
+    /libraries/tooltipster/js/jquery.tooltipster.min.js: {}
+  dependencies:
+      - core/jquery
 

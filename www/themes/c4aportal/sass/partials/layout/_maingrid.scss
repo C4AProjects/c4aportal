@@ -55,17 +55,11 @@
     }
 
     #content {
-//      @include span (9 of 12);
     }
 
     #aside_right {
       @include span (3 at 10 of 12);
       display: block;
-    }
-  }
-  #footer{
-    .container{
-      @include container(100%);
     }
   }
 }

@@ -1,0 +1,33 @@
+uuid: 36a9647a-272a-42f2-8000-e757eed9a9ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.clients
+  module:
+    - system
+    - views
+  theme:
+    - c4aportal
+id: views_block__clients_block_1
+theme: c4aportal
+region: footer_firstcolumn
+weight: -9
+provider: null
+plugin: 'views_block:clients-block_1'
+settings:
+  id: 'views_block:clients-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  cache:
+    max_age: 0
+    contexts: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

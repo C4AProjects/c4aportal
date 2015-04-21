@@ -5,6 +5,7 @@ dependencies:
   config:
     - views.view.home_page_project
   module:
+    - system
     - views
   theme:
     - c4aportal
@@ -24,4 +25,9 @@ settings:
     contexts: {  }
   views_label: ''
   items_per_page: none
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

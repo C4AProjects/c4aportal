@@ -32,6 +32,7 @@ function c4aportal_preprocess_html(&$variables){
 function c4aportal_preprocess_page(&$vars){
     global $base_url;
     $vars['logo'] = $base_url .'/'. drupal_get_path('theme','c4aportal').'/logo.png';
+    $vars['#attached']['library'][] = "c4aportal/jquery.tooltipster";
     if($vars['is_front']){
         $vars['slideslogan'] = array(
             "Home of the <span class='bold'>largest network</span> of <span class='upper'>african coders</span>",
@@ -50,14 +51,19 @@ function c4aportal_preprocess_block(&$vars){
 }
 
 function c4aportal_css_alter(&$css){
-//    kint($css);
     if($css['jquery.bxslider.css']){
         $css['jquery.bxslider.css']['weight'] = 195;
+    }
+    if($css['tooltipster.css']){
+        $css['tooltipster.css']['weight'] = 194;
     }
 }
 
 function c4aportal_js_alter(&$js){
     if($js['libraries/jquery.bxslider/jquery.bxslider.js']){
         $js['libraries/jquery.bxslider/jquery.bxslider.js']['weight'] = 0.004;
+    }
+    if($js['libraries/tooltipster/js/jquery.tooltipster.min.js']){
+        $js['libraries/tooltipster/js/jquery.tooltipster.min.js']['weight'] = 0.0041;
     }
 }

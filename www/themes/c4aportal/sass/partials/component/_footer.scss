@@ -1,0 +1,103 @@
+.footer-info {
+  .first {
+    background: #e9e9e9;
+    .container{
+      .region-footer-firstcolumn{
+        .block{
+          .content{
+            .views-element-container{
+              .view{
+                .view-content{
+                  .views-row{
+                    @include span (2);
+                    margin-left: 30px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .second {
+    .container{
+      height: 650px;
+      background: url("../images/map.png") center no-repeat;
+      background-size: contain;
+      .region-footer-secondcolumn{
+        #block-homewhereweare{
+          .content{
+            .who_title{
+              text-align: center;
+              color: #888c94;
+              font-weight: bold;
+              padding: 30px 125px;
+              text-transform: uppercase;
+
+            }
+            .tooltip{
+              float: left;
+              height: 50px;
+              width: 50px;
+              background-size: contain;
+              position: absolute;
+              background: url("../images/us.png") center no-repeat;
+            }
+            .us{
+              left: 25%;
+              top: 365%;
+              background: url("../images/us.png") center no-repeat;
+              background-size: contain;
+            }
+            .sn {
+              left: 43%;
+              top: 458%;
+              background: url("../images/sn.png") center no-repeat;
+              background-size: contain;
+            }
+            .ng {
+              left: 45.5%;
+              top: 478%;
+              background: url("../images/ng.png") center no-repeat;
+              background-size: contain;
+            }
+            .sa {
+              left: 51%;
+              top: 610%;
+              background: url("../images/sa.png") center no-repeat;
+              background-size: contain;
+            }
+            .tn{
+              left: 49%;
+              top: 409%;
+              background: url("../images/tn.png") center no-repeat;
+              background-size: contain;
+            }
+            .et{
+              left: 55%;
+              top: 492%;
+              background: url("../images/et.png") center no-repeat;
+              background-size: contain;
+            }
+            .ke{
+              left: 55%;
+              top: 510%;
+              background: url("../images/ke.png") center no-repeat;
+              background-size: contain;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .third {
+
+  }
+
+  .fourth {
+
+  }
+}

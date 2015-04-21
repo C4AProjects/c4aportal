@@ -18,6 +18,7 @@
                 auto: true,
                 speed:2000
             });
+            $('.tooltip').tooltipster();
         }
     };
 })(jQuery, Drupal, window);

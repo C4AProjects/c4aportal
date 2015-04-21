@@ -1,0 +1,20 @@
+uuid: c9cf4e57-75b0-43cf-a300-f87cafe2d5bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.client
+id: node.client.promote
+field_name: promote
+entity_type: node
+bundle: client
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings: {  }
+field_type: boolean
