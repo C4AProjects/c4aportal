@@ -1,0 +1,23 @@
+uuid: a28d25c1-5392-497a-9646-70fe46a2c59c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rate_or_budget
+    - node.type.job
+id: node.job.field_rate_or_budget
+field_name: field_rate_or_budget
+entity_type: node
+bundle: job
+label: 'Rate or Budget'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

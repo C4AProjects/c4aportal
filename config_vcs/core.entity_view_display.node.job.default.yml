@@ -1,0 +1,52 @@
+uuid: 0a1a8e17-3d3c-43dd-8305-5a4facbecba5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.job.body
+    - field.field.node.job.field_job_techno
+    - field.field.node.job.field_rate_or_budget
+    - field.field.node.job.field_timeframe
+    - node.type.job
+  module:
+    - datetime
+    - taxonomy
+    - text
+    - user
+id: node.job.default
+targetEntityType: node
+bundle: job
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_job_techno:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: taxonomy_term_reference_link
+  field_rate_or_budget:
+    weight: 103
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+  field_timeframe:
+    weight: 104
+    label: above
+    settings:
+      format_type: medium
+    third_party_settings: {  }
+    type: datetime_default
+  links:
+    weight: 100
+hidden: {  }

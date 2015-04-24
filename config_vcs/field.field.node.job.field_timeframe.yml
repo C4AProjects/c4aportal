@@ -1,0 +1,21 @@
+uuid: 9058db20-3fd0-4060-8807-7b44cffb5ee8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_timeframe
+    - node.type.job
+  module:
+    - datetime
+id: node.job.field_timeframe
+field_name: field_timeframe
+entity_type: node
+bundle: job
+label: Timeframe
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

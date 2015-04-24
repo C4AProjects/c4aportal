@@ -1,0 +1,22 @@
+uuid: 62b1250f-acd3-4a93-ab27-39add4c8e3ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_techno
+    - node.type.job
+  module:
+    - taxonomy
+id: node.job.field_job_techno
+field_name: field_job_techno
+entity_type: node
+bundle: job
+label: Technology
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+field_type: taxonomy_term_reference
