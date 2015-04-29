@@ -1,0 +1,50 @@
+uuid: 0e856c39-a806-42cf-9a03-3f7022f71671
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.event.body
+    - field.field.node.event.field_end_date
+    - field.field.node.event.field_place
+    - field.field.node.event.field_start_date
+    - node.type.event
+  module:
+    - datetime
+    - text
+    - user
+id: node.event.default
+targetEntityType: node
+bundle: event
+mode: default
+content:
+  body:
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    label: hidden
+  field_end_date:
+    type: datetime_default
+    weight: 104
+    settings:
+      format_type: html_date
+    third_party_settings: {  }
+    label: above
+  field_place:
+    type: basic_string
+    weight: 105
+    settings: {  }
+    third_party_settings: {  }
+    label: above
+  field_start_date:
+    type: datetime_default
+    weight: 103
+    settings:
+      format_type: html_date
+    third_party_settings: {  }
+    label: above
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
