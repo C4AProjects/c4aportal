@@ -1,0 +1,117 @@
+/*
+* Coders sections
+*/
+
+.section-developers{
+  #main{
+    #content{
+      h1.title{
+        font-size: 1.9em;
+        text-align: center;
+        color: #ff9b39;
+
+      }
+    }
+  }
+  #content_bottom{
+    background: #f7f7e7;
+    .block{
+      min-height: 351px;
+      background: #4d5a68;
+      margin: 10px 0;
+      padding: 5px 10px;
+      h2{
+        font-size: 1.5em;
+        color: #ff9b39;
+        margin: 0;
+        padding: 5px 2px;
+      }
+      .view-id-events{
+        padding-top: 2px;
+        .views-row{
+          margin-bottom: 7px;
+        }
+      }
+      .view-content{
+        .views-row{
+          overflow: hidden;
+          .gauche{
+            width: 50px;
+            float: left;
+            a{
+              img{
+                @include border-radius(25px);
+              }
+            }
+          }
+          .droite,.views-field-title{
+            float: right;
+            width: 200px;
+            span,a{
+              font-size: 0.88em;
+              color: #ffffff;
+              text-decoration: none;
+            }
+          }
+          .views-field-field-start-date{
+            time{
+              width: 50px;
+              font-size: 0.9em;
+              text-align: center;
+              float: left;
+              background: #ff9b39;
+              color: #ffffff;
+              line-height: 26px;
+              min-height: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include breakpoint($bp-tablet) {
+  .section-developers {
+    #content_bottom {
+      background: #ffffff;
+      .block {
+        @include span(3);
+        margin-right: 0.19%;
+        width: 22%;
+        .view-content {
+          .views-row {
+            .gauche {
+              width: 50px;
+            }
+            .droite,.views-field-title{
+              width: 150px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include breakpoint($bp-desktop) {
+  .section-developers {
+    #content_bottom {
+      .block {
+        @include span(3);
+        margin-right: 0.19%;
+        width: 22%;
+      }
+    }
+  }
+}
+@include breakpoint($bp-large) {
+  .section-developers {
+    #content_bottom {
+      .block {
+        @include span(3);
+        margin-right: 0.195%;
+        width: 23%;
+      }
+    }
+  }
+}

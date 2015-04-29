@@ -68,7 +68,7 @@
       }
     }
     #block-homedeveloperblock,#block-homeemployerblock{
-      padding: 10px 40px;
+      padding: 10px 0;
       .content{
         .title{
           display: block;
@@ -99,6 +99,19 @@
           margin: 0 auto;
           margin-top: 10px;
         }
+      }
+    }
+  }
+}
+
+@include breakpoint($bp-tablet) {
+
+}
+@include breakpoint($bp-desktop) {
+  .highlighted{
+    .region-highlighted{
+      #block-homedeveloperblock,#block-homeemployerblock{
+        padding: 10px 40px;
       }
     }
   }

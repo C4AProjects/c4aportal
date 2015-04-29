@@ -24,12 +24,38 @@ function c4aportal_preprocess_html(&$variables){
     else {
         $variables['attributes']['class'][] = 'layout-no-sidebars';
     }
+    $is_front_page = \Drupal::service('path.matcher')->isFrontPage();
+    if (!$is_front_page) {
+        // Add unique class for each page.
+        $path = \Drupal::request()->getRequestUri();
+
+        // Add unique class for each website section.
+        list($section, ) = explode('/', $path, 2);
+        $arg = explode('/', $path);
+
+        if ($arg[0] == 'node' && isset($arg[1])) {
+            if ($arg[1] == 'add') {
+                $section = 'node-add';
+            }
+            elseif (isset($arg[2]) && is_numeric($arg[1]) && ($arg[2] == 'edit' || $arg[2] == 'delete')) {
+                $section = 'node-' . $arg[2];
+            }
+        }else{
+            if($arg[1]){
+                $section = $arg[1];
+            }
+        }
+        $variables['attributes']['class'][] = \Drupal\Component\Utility\Html::getClass('section-' . $section);
+    }else{
+        $variables['attributes']['class'][] ="front";
+    }
 }
 /**
  * @param $vars
  * Hook_preprocess_page
  */
 function c4aportal_preprocess_page(&$vars){
+
     global $base_url;
     $vars['logo'] = $base_url .'/'. drupal_get_path('theme','c4aportal').'/logo.png';
     $vars['#attached']['library'][] = "c4aportal/jquery.tooltipster";
@@ -46,8 +72,9 @@ function c4aportal_preprocess_page(&$vars){
 }
 
 function c4aportal_preprocess_block(&$vars){
-    $vars['attributes']['class'][] = 'menu--main';
-//    kint($vars);
+    if($vars['plugin_id']=='system_main_block'){
+        $vars['attributes']['class'][] = 'menu--main';
+    }
 }
 
 function c4aportal_css_alter(&$css){

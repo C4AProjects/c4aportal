@@ -1,0 +1,14 @@
+uuid: 6a3cfa17-6869-42d4-8200-d715dfbfd9f0
+langcode: en
+status: true
+dependencies: {  }
+name: c4a_user_small
+label: c4a-user-small
+effects:
+  3de8057a-a8c5-4c75-af18-24e48e1cf8aa:
+    uuid: 3de8057a-a8c5-4c75-af18-24e48e1cf8aa
+    id: image_resize
+    weight: 1
+    data:
+      width: 50
+      height: 50

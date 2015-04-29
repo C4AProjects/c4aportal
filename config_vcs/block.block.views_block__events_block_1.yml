@@ -1,0 +1,33 @@
+uuid: 664df179-ecaa-4801-bc00-b2a8c57ae076
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.events
+  module:
+    - system
+    - views
+  theme:
+    - c4aportal
+id: views_block__events_block_1
+theme: c4aportal
+region: content_bottom
+weight: -11
+provider: null
+plugin: 'views_block:events-block_1'
+settings:
+  id: 'views_block:events-block_1'
+  label: 'Upcoming events'
+  provider: views
+  label_display: visible
+  cache:
+    max_age: 0
+    contexts: {  }
+  views_label: 'Upcoming events'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: developers
+    negate: false
+    context_mapping: {  }

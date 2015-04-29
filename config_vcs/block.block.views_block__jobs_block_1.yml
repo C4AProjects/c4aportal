@@ -1,0 +1,33 @@
+uuid: c0050f8d-ce0f-42c8-9a00-c9302d63b9e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.jobs
+  module:
+    - system
+    - views
+  theme:
+    - c4aportal
+id: views_block__jobs_block_1
+theme: c4aportal
+region: content_bottom
+weight: -8
+provider: null
+plugin: 'views_block:jobs-block_1'
+settings:
+  id: 'views_block:jobs-block_1'
+  label: 'Latest job'
+  provider: views
+  label_display: visible
+  cache:
+    max_age: 0
+    contexts: {  }
+  views_label: 'Latest job'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: developers
+    negate: false
+    context_mapping: {  }

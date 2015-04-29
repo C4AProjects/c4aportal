@@ -32,7 +32,11 @@ header {
         }
       }
     }
+
   }
+
+
+
 }
 
 #main-wrapper {
@@ -48,6 +52,85 @@ header {
   }
 }
 
+@media (max-width: 767px) {
+  /* Theming opened nav */
+  nav ul {
+
+    /* maximum height */
+    max-height: 25em;
+
+    /* translate with hardware acceleration */
+    transform: translateZ(0);
+    transition: max-height .4s;
+  }
+
+  /* Theming closed nav */
+  nav.is-closed ul {
+    max-height: 0;
+    overflow: hidden;
+  }
+  nav + * {
+    position: relative;
+  }
+  nav ul {
+    list-style: outside none none;
+    margin: 0;
+    max-height: 25em;
+    padding: 0;
+    transform: translateZ(0px);
+    transition: max-height 0.4s ease 0s;
+    will-change: max-height;
+  }
+  nav a {
+    background: none repeat scroll 0 0 #ff9b39;
+    color: #fff;
+    display: block;
+    margin-bottom: 2px;
+    padding: 1.2rem;
+    text-decoration: none;
+  }
+  nav a:hover, nav a:focus, nav a:active {
+    background: none repeat scroll 0 0 #fff;
+    color: #ff9b39;
+  }
+  nav.is-closed ul {
+    max-height: 0;
+    overflow: hidden;
+  }
+  nav > button {
+    background-color: transparent;
+    background-image: linear-gradient(to right, #ff9b39, #ff9b39), linear-gradient(to right, #ff9b39, #ff9b39), linear-gradient(to right, #ff9b39, #ff9b39);
+    background-position: center top, center center, center bottom;
+    background-repeat: no-repeat;
+    background-size: 2.5rem 0.4rem;
+    border: 0 none;
+    cursor: pointer;
+    display: block;
+    height: 1.6rem;
+    outline: 0 none;
+    padding: 0;
+    position: absolute;
+    right: 0rem;
+    top: 1rem;
+    transition: all 0.2s ease 0s;
+    width: 3.5rem;
+    z-index: 1;
+  }
+  nav > button::-moz-focus-inner {
+    border: 0 none;
+  }
+  nav:not(.is-closed) > button {
+    background-position: center center, center center, center center;
+    transform: rotate(180deg) translateZ(0px);
+  }
+  .visually-hidden {
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px;
+  }
+}
 
 @include breakpoint($bp-tablet) {
   header {
@@ -71,6 +154,7 @@ header {
         }
       }
     }
+
   }
 
   #main-wrapper {

@@ -1,0 +1,33 @@
+uuid: 514704b2-6376-4ba6-9c1f-31e677938b69
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.users
+  module:
+    - system
+    - views
+  theme:
+    - c4aportal
+id: views_block__users_block_2
+theme: c4aportal
+region: content_bottom
+weight: -12
+provider: null
+plugin: 'views_block:users-block_2'
+settings:
+  id: 'views_block:users-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  cache:
+    max_age: 0
+    contexts: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "developers\r\n"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,7 @@
+c4a_customs.developers:
+  path: '/developers'
+  defaults:
+    _controller: '\Drupal\c4a_customs\Controller\CodersController::index'
+    _title: 'Developers'
+  requirements:
+    _permission: 'access content'

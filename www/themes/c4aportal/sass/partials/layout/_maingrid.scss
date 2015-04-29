@@ -23,11 +23,31 @@
     display: none;
   }
 }
-
+.highlighted{
+  .region-highlighted{
+    #block-homeemployerblock{
+      @include span (12 of 12);
+    }
+    #block-homedeveloperblock{
+      @include span (12 of 12);
+    }
+  }
+}
 
 @include breakpoint($bp-tablet) {
   #main {
     @include container(100%);
+  }
+  .highlighted{
+    .region-highlighted{
+      #block-homeemployerblock{
+        @include span (4 at 7 of 12 isolate);
+      }
+      #block-homedeveloperblock{
+
+        @include span (4 at 3 of 12 isolate);
+      }
+    }
   }
 }
 
@@ -45,7 +65,7 @@
     }
   }
   #main {
-    color:#ffffff;
+
     .container{
       @include container;
     }

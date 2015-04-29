@@ -5,6 +5,7 @@
 
 /* Mobile First */
 .menu--main {
+
   ul {
     list-style: none;
     margin: 0;
@@ -23,6 +24,19 @@
 
 
 @include breakpoint($bp-tablet) {
+  ul{
+    li{
+      a{
+        color: #ffffff;
+        font-size: 0.79em;
+        padding-top: 40px;
+        text-transform: uppercase;
+      }
+      a:hover,a.active{
+        color: #ff9b39;
+      }
+    }
+  }
   .menu--main,
   .menu--main ul,
   .menu--main ul li,
@@ -120,6 +134,19 @@
 
 @include breakpoint($bp-desktop) {
   .menu--main {
+    ul{
+      li{
+        a{
+          color: #ffffff;
+          font-size: 0.79em;
+          padding-top: 40px;
+          text-transform: uppercase;
+        }
+        a:hover,a.active{
+          color: #ff9b39;
+        }
+      }
+    }
   }
 }
 
