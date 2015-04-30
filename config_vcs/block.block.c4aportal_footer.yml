@@ -1,22 +1,24 @@
 uuid: c94fa888-2be0-4060-8706-6e001db7fce9
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - system.menu.footer
   module:
+    - node
     - system
+    - user
   theme:
     - c4aportal
 id: c4aportal_footer
 theme: c4aportal
-region: '-1'
+region: footer
 weight: 0
 provider: null
 plugin: 'system_menu_block:footer'
 settings:
   id: 'system_menu_block:footer'
-  label: 'Footer menu'
+  label: Navigation
   provider: system
   label_display: visible
   cache:

@@ -204,20 +204,17 @@
             </div>
           </div>
         {% endif %}
-
-        {% if page.footer %}
           <div class="footer-legal" role="contentinfo">
-              <div class="footer_left">
-                  {{ page.footer }}
+              <div class="container">
+                  <div class="footer_left">
+                      {{ page.footer }}
+                  </div>
+                  <div class="footer_right">
+                      {{ page.footer2 }}
+                  </div>
+                 <span class="copyright">Copyright {{ "now" | date('Y') }}. All rights reserved. Brought to live with Drupal</span>
               </div>
-              <div class="footer_right">
-                  {{ page.footer2 }}
-              </div>
-
-            Copyright {{ "now" | date('Y') }}. All rights reserved. Brought to live with
           </div> <!-- /#footer -->
-        {% endif %}
-
     </footer>
   </div>
 </div>

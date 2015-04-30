@@ -1,4 +1,8 @@
+#footer{
+  background: #333333;
+}
 .footer-info {
+  background:#000000;
   .first {
     background: #e9e9e9;
     .container{
@@ -27,8 +31,15 @@
       background: url("../images/map.png") center no-repeat;
       background-size: contain;
       .region-footer-secondcolumn{
+        height: 100%;
         #block-homewhereweare{
+          height: 100%;
           .content{
+            height: 100%;
+            .block_container{
+              overflow: auto;
+              height: 100%;
+            }
             .who_title{
               text-align: center;
               color: #888c94;
@@ -42,48 +53,48 @@
               height: 50px;
               width: 50px;
               background-size: contain;
-              position: absolute;
+              position: relative;
               background: url("../images/us.png") center no-repeat;
             }
             .us{
-              left: 25%;
-              top: 365%;
+              left: 16%;
+              top: 31%;
               background: url("../images/us.png") center no-repeat;
               background-size: contain;
             }
             .sn {
-              left: 43%;
-              top: 458%;
+              left: 31%;
+              top: 43%;
               background: url("../images/sn.png") center no-repeat;
               background-size: contain;
             }
             .ng {
-              left: 45.5%;
-              top: 478%;
+              left: 32%;
+              top: 45%;
               background: url("../images/ng.png") center no-repeat;
               background-size: contain;
             }
             .sa {
-              left: 51%;
-              top: 610%;
+              left: 31%;
+              top: 58%;
               background: url("../images/sa.png") center no-repeat;
               background-size: contain;
             }
             .tn{
-              left: 49%;
-              top: 409%;
+              left: 24%;
+              top: 36%;
               background: url("../images/tn.png") center no-repeat;
               background-size: contain;
             }
             .et{
-              left: 55%;
-              top: 492%;
+              left: 21.5%;
+              top: 44%;
               background: url("../images/et.png") center no-repeat;
               background-size: contain;
             }
             .ke{
-              left: 55%;
-              top: 510%;
+              left: 15.5%;
+              top: 45.5%;
               background: url("../images/ke.png") center no-repeat;
               background-size: contain;
             }
@@ -99,5 +110,244 @@
 
   .fourth {
 
+  }
+}
+.footer-legal{
+  h2,.who_title{
+    font-size: 0.85em;
+    text-transform: uppercase;
+    color: #ffffff;
+    line-height: 2em;
+    font-weight: 200;
+    margin: 0;
+
+  }
+  .copyright{
+    text-align:  center;
+    display: block;
+    font-size: 0.59em;
+    color: #ffffff;
+
+  }
+  .container{
+    .footer_left{
+      @include span (12);
+      nav{
+        ul{
+          li{
+            list-style: none;
+            a{
+              font-size: 0.5em;
+              text-decoration: none;
+            }
+          }
+        }
+
+      }
+    }
+    .footer_right{
+      @include span (12);
+      .block{
+
+      }
+    }
+  }
+}
+@include breakpoint($bp-tablet) {
+  .footer-info {
+    .second {
+      .container{
+        .region-footer-secondcolumn{
+          #block-homewhereweare{
+            .content{
+              .us{
+                left: 18%;
+                top: 31%;
+                background: url("../images/us.png") center no-repeat;
+                background-size: contain;
+              }
+              .sn {
+                left: 35%;
+                top: 41%;
+                background: url("../images/sn.png") center no-repeat;
+                background-size: contain;
+              }
+              .ng {
+                left: 34%;
+                top: 45%;
+                background: url("../images/ng.png") center no-repeat;
+                background-size: contain;
+              }
+              .sa {
+                left: 34%;
+                top: 62%;
+                background: url("../images/sa.png") center no-repeat;
+                background-size: contain;
+              }
+              .tn{
+                left: 29%;
+                top: 36%;
+                background: url("../images/tn.png") center no-repeat;
+                background-size: contain;
+              }
+              .et{
+                left: 27.5%;
+                top: 46%;
+                background: url("../images/et.png") center no-repeat;
+                background-size: contain;
+              }
+              .ke{
+                left: 22.5%;
+                top: 47.5%;
+                background: url("../images/ke.png") center no-repeat;
+                background-size: contain;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer-legal{
+    .container{
+      .footer_left{
+        @include span (8);
+      }
+      .footer_right{
+        @include span (4 last);
+      }
+    }
+  }
+}
+@include breakpoint($bp-desktop) {
+  .footer-info {
+    .second {
+      .container{
+        .region-footer-secondcolumn{
+          #block-homewhereweare{
+            .content{
+              .us{
+                left: 25%;
+                top: 31%;
+                background: url("../images/us.png") center no-repeat;
+                background-size: contain;
+              }
+              .sn {
+                left: 39%;
+                top: 41%;
+                background: url("../images/sn.png") center no-repeat;
+                background-size: contain;
+              }
+              .ng {
+                left: 38%;
+                top: 45%;
+                background: url("../images/ng.png") center no-repeat;
+                background-size: contain;
+              }
+              .sa {
+                left: 38%;
+                top: 62%;
+                background: url("../images/sa.png") center no-repeat;
+                background-size: contain;
+              }
+              .tn{
+                left: 33%;
+                top: 36%;
+                background: url("../images/tn.png") center no-repeat;
+                background-size: contain;
+              }
+              .et{
+                left: 32.5%;
+                top: 46%;
+                background: url("../images/et.png") center no-repeat;
+                background-size: contain;
+              }
+              .ke{
+                left: 28.5%;
+                top: 47.5%;
+                background: url("../images/ke.png") center no-repeat;
+                background-size: contain;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer-legal{
+    .container{
+      .footer_left{
+        @include span (8);
+      }
+      .footer_right{
+        @include span (4 last);
+      }
+    }
+  }
+}
+@include breakpoint($bp-large) {
+  .footer-legal{
+    .container{
+      .footer_left{
+        @include span (8);
+      }
+      .footer_right{
+        @include span (4 last);
+      }
+    }
+  }
+  .footer-info {
+    .second {
+      .container{
+        .region-footer-secondcolumn{
+          #block-homewhereweare{
+            .content{
+              .us{
+                left: 25%;
+                top: 31%;
+                background: url("../images/us.png") center no-repeat;
+                background-size: contain;
+              }
+              .sn {
+                left: 39%;
+                top: 41%;
+                background: url("../images/sn.png") center no-repeat;
+                background-size: contain;
+              }
+              .ng {
+                left: 38%;
+                top: 45%;
+                background: url("../images/ng.png") center no-repeat;
+                background-size: contain;
+              }
+              .sa {
+                left: 38%;
+                top: 62%;
+                background: url("../images/sa.png") center no-repeat;
+                background-size: contain;
+              }
+              .tn{
+                left: 33%;
+                top: 36%;
+                background: url("../images/tn.png") center no-repeat;
+                background-size: contain;
+              }
+              .et{
+                left: 32.5%;
+                top: 46%;
+                background: url("../images/et.png") center no-repeat;
+                background-size: contain;
+              }
+              .ke{
+                left: 28.5%;
+                top: 47.5%;
+                background: url("../images/ke.png") center no-repeat;
+                background-size: contain;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

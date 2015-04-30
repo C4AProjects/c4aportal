@@ -27,9 +27,11 @@
   .region-highlighted{
     #block-homeemployerblock{
       @include span (12 of 12);
+      min-height: 197px;
     }
     #block-homedeveloperblock{
       @include span (12 of 12);
+      min-height: 197px;
     }
   }
 }
@@ -44,7 +46,6 @@
         @include span (4 at 7 of 12 isolate);
       }
       #block-homedeveloperblock{
-
         @include span (4 at 3 of 12 isolate);
       }
     }
@@ -86,6 +87,17 @@
 
 
 @include breakpoint($bp-large) {
+  .highlighted{
+    .region-highlighted{
+      #block-homeemployerblock{
+        @include span (4 at 7 of 12 isolate);
+      }
+      #block-homedeveloperblock{
+
+        @include span (4 at 2 of 12 isolate);
+      }
+    }
+  }
   #main {
     @include container(100%);
   }

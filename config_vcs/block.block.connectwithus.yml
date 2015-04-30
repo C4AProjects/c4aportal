@@ -4,19 +4,22 @@ status: true
 dependencies:
   module:
     - c4a_blocks
+    - node
+    - system
+    - user
   theme:
     - c4aportal
 id: connectwithus
 theme: c4aportal
-region: footer
-weight: -10
+region: footer2
+weight: -12
 provider: null
 plugin: connect_with_us
 settings:
   id: connect_with_us
   label: 'Connect with us'
   provider: c4a_blocks
-  label_display: visible
+  label_display: '0'
   cache:
     max_age: 0
     contexts: {  }
