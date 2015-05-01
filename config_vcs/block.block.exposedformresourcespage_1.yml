@@ -1,0 +1,34 @@
+uuid: 86ae7a2b-726b-4e7d-a302-2d977de2ada2
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.resources
+  module:
+    - node
+    - system
+    - user
+    - views
+  theme:
+    - c4aportal
+id: exposedformresourcespage_1
+theme: c4aportal
+region: footer_secondcolumn
+weight: null
+provider: null
+plugin: 'views_exposed_filter_block:resources-page_1'
+settings:
+  id: 'views_exposed_filter_block:resources-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  cache:
+    max_age: 0
+    contexts: {  }
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: resources
+    negate: false
+    context_mapping: {  }

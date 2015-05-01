@@ -1,0 +1,19 @@
+uuid: a51800aa-f404-40cb-bd01-1f31f3d83dcb
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference
+    - node
+id: node.field_resource_technology
+field_name: field_resource_technology
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: entity_reference
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false

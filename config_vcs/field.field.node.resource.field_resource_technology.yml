@@ -1,0 +1,28 @@
+uuid: 9271ef1f-9514-490f-ab4b-7549fe9dcf81
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resource_technology
+    - node.type.resource
+  module:
+    - entity_reference
+id: node.resource.field_resource_technology
+field_name: field_resource_technology
+entity_type: node
+bundle: resource
+label: Technology
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings:
+    target_bundles:
+      technology: technology
+    sort:
+      field: _none
+    auto_create: true
+field_type: entity_reference

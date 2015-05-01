@@ -1,17 +1,16 @@
-uuid: 2103798d-8555-409e-a447-71818d7c62fb
+uuid: 899b7c00-a058-42c6-a106-6a44ffae6e59
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.project.body
-    - node.type.project
+    - node.type.resource
   module:
     - text
     - user
-id: node.project.teaser
+id: node.resource.teaser
 targetEntityType: node
-bundle: project
+bundle: resource
 mode: teaser
 content:
   body:
@@ -24,5 +23,7 @@ content:
   links:
     weight: 100
 hidden:
-  field_image: true
-  field_project_type: true
+  field_resource_category: true
+  field_resource_image: true
+  field_resource_technology: true
+  field_resource_type: true

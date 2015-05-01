@@ -1,0 +1,74 @@
+uuid: 85f6f715-78ca-4aca-9c00-f364b8c5abe0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.resource.body
+    - field.field.node.resource.field_resource_category
+    - field.field.node.resource.field_resource_image
+    - field.field.node.resource.field_resource_technology
+    - field.field.node.resource.field_resource_type
+    - field.field.node.resource.field_resource_video
+    - node.type.resource
+  module:
+    - image
+    - options
+    - text
+    - user
+    - youtube
+id: node.resource.default
+targetEntityType: node
+bundle: resource
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_resource_category:
+    weight: 106
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_resource_image:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_resource_technology:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_resource_type:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_resource_video:
+    weight: 107
+    label: above
+    settings:
+      youtube_size: 450x315
+      youtube_width: ''
+      youtube_height: ''
+      youtube_autoplay: false
+      youtube_showinfo: false
+      youtube_controls: false
+      youtube_autohide: false
+      youtube_iv_load_policy: false
+    third_party_settings: {  }
+    type: youtube_video
+  links:
+    weight: 100
+hidden: {  }
