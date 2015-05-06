@@ -1506,19 +1506,19 @@ header .navigation ul li a {
   padding: 0;
 }
 /* line 15, ../sass/partials/component/_login.scss */
-.login-modal .ui-dialog-content #edit-form-normal {
+.login-modal .ui-dialog-content #edit-form-normal, .login-modal .ui-dialog-content #edit-form-normal--2 {
   display: block;
   color: #8d9596;
   width: 49%;
   float: left;
 }
 /* line 16, ../sass/partials/component/_login.scss */
-.login-modal .ui-dialog-content #edit-form-normal > label {
+.login-modal .ui-dialog-content #edit-form-normal > label, .login-modal .ui-dialog-content #edit-form-normal--2 > label {
   font-size: 1.5em;
   color: #fb923d;
 }
 /* line 25, ../sass/partials/component/_login.scss */
-.login-modal .ui-dialog-content #edit-form-normal .form-item input {
+.login-modal .ui-dialog-content #edit-form-normal .form-item input, .login-modal .ui-dialog-content #edit-form-normal--2 .form-item input {
   width: 90%;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -1528,20 +1528,32 @@ header .navigation ul li a {
   color: #8d9596;
 }
 /* line 32, ../sass/partials/component/_login.scss */
-.login-modal .ui-dialog-content #edit-form-normal .form-item .description {
+.login-modal .ui-dialog-content #edit-form-normal .form-item .description, .login-modal .ui-dialog-content #edit-form-normal--2 .form-item .description {
   font-size: 0.6em;
 }
-/* line 38, ../sass/partials/component/_login.scss */
+/* line 40, ../sass/partials/component/_login.scss */
+.login-modal .ui-dialog-content #edit-form-normal--2 .form-item input {
+  line-height: 25px;
+}
+/* line 43, ../sass/partials/component/_login.scss */
+.login-modal .ui-dialog-content #edit-form-normal--2 .form-item .error {
+  color: #ac2925;
+}
+/* line 46, ../sass/partials/component/_login.scss */
+.login-modal .ui-dialog-content #edit-form-normal--2 .form-item .ok {
+  color: #33a333;
+}
+/* line 51, ../sass/partials/component/_login.scss */
 .login-modal .ui-dialog-content .social {
   width: 49%;
   float: right;
 }
-/* line 44, ../sass/partials/component/_login.scss */
+/* line 57, ../sass/partials/component/_login.scss */
 .login-modal .ui-dialog-buttonpane .ui-dialog-buttonset {
   float: left;
   margin-left: 30px;
 }
-/* line 47, ../sass/partials/component/_login.scss */
+/* line 60, ../sass/partials/component/_login.scss */
 .login-modal .ui-dialog-buttonpane .ui-dialog-buttonset .form-submit {
   background: #fb923d;
   border: none;

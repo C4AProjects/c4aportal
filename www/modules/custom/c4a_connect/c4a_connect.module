@@ -91,3 +91,27 @@ function c4a_connect_form_user_login_form_alter(&$form, \Drupal\Core\Form\FormSt
 
 }
 
+/**
+ * Implements hook_form_BASE_FORM_ID_alter().
+ */
+function c4a_connect_form_user_register_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id)
+{
+    $block = \Drupal::service('plugin.manager.block')->createInstance('facebook_login')->build();
+    $form['form_normal'] = array(
+        '#type' => 'item',
+        '#title'=> 'Register'
+    );
+    $form['form_normal']['field_full_name'] = $form['field_full_name'];
+    $form['form_normal']['field_full_name']['#weight'] = -1;
+    $form['form_normal']['account'] = $form['account'];
+    $form['form_normal']['account']['name']['#weight'] = -1;
+    $form['form_normal']['account']['email']['#weight'] = 1;
+    $form['form_normal']['account']['name']['#description']='';
+    $form['form_normal']['account']['mail']['#description'] = '';
+    $form['form_normal']['account']['#weight'] = 1;
+    unset($form['account']);
+    unset($form['field_full_name']);
+
+    $form['social']['facebook'] = $block;
+//    kint($form);
+}

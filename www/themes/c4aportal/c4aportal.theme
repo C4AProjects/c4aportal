@@ -120,6 +120,9 @@ function c4aportal_preprocess_menu(&$vars,$hook){
         if($vars['items']['c4a_customs.login']){
             $vars['items']['c4a_customs.login']['url']->setOptions($options);
         }
+        if($vars['items']['c4a_customs.register']){
+            $vars['items']['c4a_customs.register']['url']->setOptions($options);
+        }
     }
 }
 
