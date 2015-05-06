@@ -14,10 +14,13 @@
     li {
       margin: 0;
       padding: 0;
+
       a {
         margin: 0;
         padding: 0;
+        float: left;
       }
+
     }
   }
 }
@@ -31,9 +34,16 @@
         font-size: 0.79em;
         padding-top: 40px;
         text-transform: uppercase;
+        float: left;
       }
       a:hover,a.active{
         color: #ff9b39;
+      }
+      .ajax-progress-throbber{
+        float: left;
+        background: url("../images/throbber.gif") center no-repeat;
+        background-size: contain;
+        width: 40px;
       }
     }
   }

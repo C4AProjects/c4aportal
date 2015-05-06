@@ -4,9 +4,6 @@ status: true
 dependencies:
   module:
     - c4a_blocks
-    - node
-    - system
-    - user
   theme:
     - c4aportal
 id: connectwithus

@@ -1,0 +1,4 @@
+name: c4a Social Connect
+type: module
+description: 'A module for social connect'
+core: 8.x

@@ -1,0 +1,16 @@
+c4a_connect.facebook_controller_connect:
+  path: '/user/facebook-connect'
+  defaults:
+    _controller: '\Drupal\c4a_connect\Controller\FacebookController::connect'
+    _title: 'c4a_connect Title'
+  requirements:
+    _permission: 'access content'
+
+c4a_connect.fb_connect_admin:
+  path: '/admin/config/c4a_connect/fbconnectadmin'
+  defaults:
+    _form: '\Drupal\c4a_connect\Form\FbConnectAdmin'
+    _title: 'FbConnectAdmin'
+  requirements:
+    _permission: 'access administration pages'
+

@@ -1,0 +1,18 @@
+c4a_customs.developers:
+  title: 'Developers'
+  description: 'developer section'
+  route_name: c4a_customs.developers
+  menu_name: main
+
+c4a_customs.register:
+  title: 'Join us'
+  description: 'register button'
+  route_name: user.register
+  menu_name: main
+
+c4a_customs.login:
+  title: 'Login'
+  description: 'login button'
+  route_name: user.login
+  menu_name: main
+

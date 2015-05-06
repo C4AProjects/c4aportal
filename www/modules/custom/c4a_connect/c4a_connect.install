@@ -1,0 +1,33 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: ousmanesamba
+ * Date: 5/4/15
+ * Time: 09:27
+ */
+
+/**
+ * Implements hook_requirements().
+ */
+function c4a_connect_requirements($phase) {
+  $requirements = array();
+
+  if ($phase == 'runtime') {
+    $library = libraries_detect('facebook-php-sdk');
+
+    $requirements['facebook-php-sdk'] = array(
+      'title' => t('Facebook sdk'),
+    );
+    if ($library['installed']) {
+      $requirements['facebook-php-sdk']['value'] = 'OK';
+      $requirements['facebook-php-sdk']['severity'] = REQUIREMENT_OK;
+    }
+    else {
+      $requirements['facebook-php-sdk']['value'] = $library['error'];
+      $requirements['facebook-php-sdk']['description'] = $library['error message'];
+      $requirements['facebook-php-sdk']['severity'] = REQUIREMENT_ERROR;
+    }
+  }
+
+  return $requirements;
+}

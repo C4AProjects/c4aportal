@@ -1,0 +1,93 @@
+<?php
+/**
+* @file
+* A description of what your module does.
+*/
+
+function c4a_connect_libraries_info(){
+  $libraries['facebook-php-sdk'] = array(
+    // Only used in administrative UI of Libraries API.
+    'name' => 'Facebook php sdk',
+    'vendor url' => 'https://github.com/facebook/facebook-php-sdk-v4/',
+    'download url' => 'https://github.com/facebook/facebook-php-sdk-v4/archive/4.0-dev.zip',
+    'version' => '*',
+    // Optional: If, after extraction, the actual library files are contained in
+    // 'sites/all/libraries/example/lib', specify the relative path here.
+    'path' => 'facebook-php-sdk',
+    // Default list of files of the library to load. Important: Only specify
+    // third-party files belonging to the library here, not integration files of
+    // your module.
+    'files' => array(
+      // For PHP libraries, specify include files here, still relative to the
+      // library path.
+      'php' => array(
+        'autolaod.php',
+      ),
+    ),
+  );
+
+  return $libraries;
+}
+
+function c4a_connect_facebook_client_load(){
+    if(!class_exists('FacebookSession')){
+        $path = libraries_get_path('facebook-php-sdk');
+        define('FACEBOOK_SDK_V4_SRC_DIR', $path.'/src/Facebook/');
+        require $path.'/autoload.php';
+    }
+}
+
+/**
+ * Generates a unique username for drupal site based on fb username.
+ */
+function c4a_connect_unique_user_name($fb_name, $i = 0) {
+    $trimmed_name = '';
+    $user_to_load = '';
+    if ($i == 0) {
+        $trimmed_name = strtolower(trim(str_replace(' ', '_', $fb_name)));
+        $user_to_load = $trimmed_name;
+    }
+    else {
+        $trimmed_name = $fb_name;
+        $user_to_load = $trimmed_name . "_" . $i;
+    }
+
+    //Check if user exists by loading userbyname
+    if (is_object(user_load_by_name($user_to_load))) {
+        $i++;
+        return (c4a_connect_unique_user_name($trimmed_name, $i));
+    }
+    else {
+        return $user_to_load;
+    }
+}
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter().
+ */
+function c4a_connect_form_user_login_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id){
+
+    $block = \Drupal::service('plugin.manager.block')->createInstance('facebook_login')->build();
+
+    $form['form_normal'] = array(
+        '#type' => 'item',
+        '#title'=> 'Login'
+    );
+
+    $form['form_normal']['name'] = $form['name'];
+    $form['form_normal']['pass'] = $form['pass'];
+    unset($form['name']);
+    unset($form['pass']);
+    $form['form_normal']['actions'] = $form['actions'];
+    unset($form['actions']);
+    $form['social'] = array(
+        '#title'=> 'Login by another way',
+        '#type' => 'markup',
+        '#prefix' => '<div class="social">',
+        '#suffix' => '<div/>',
+
+    );
+    $form['social']['facebook'] = $block;
+
+}
+

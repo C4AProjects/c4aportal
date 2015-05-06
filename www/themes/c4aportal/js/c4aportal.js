@@ -3,8 +3,10 @@
  */
 
 (function ($, Drupal, window) {
+
     Drupal.behaviors.bxSlider = {
         attach:function(){
+            //console.log(Drupal);
             $('.bxslider').bxSlider({
                 captions: false,
                 pager: false,

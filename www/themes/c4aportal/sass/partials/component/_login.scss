@@ -1,0 +1,58 @@
+.login-modal{
+  font-size: 0.8em;
+  .ui-dialog-titlebar{
+    .ui-dialog-title{
+      text-indent: 99999px;
+      text-overflow: initial;
+    }
+  }
+  .ui-dialog-buttonpane,.ui-dialog-titlebar{
+    border: none;
+    background: none;
+    padding: 0;
+  }
+  .ui-dialog-content{
+    #edit-form-normal{
+      >label{
+        font-size: 1.5em;
+        color:#fb923d;
+      }
+      display: block;
+      color:#8d9596;
+      width: 49%;
+      float: left;
+      .form-item{
+        input{
+          width: 90%;
+          @include border-radius(5px);
+          border: 2px solid #e3e4e8;
+          line-height: 38px;
+          color: #8d9596;
+        }
+        .description{
+          font-size: 0.6em;
+        }
+      }
+
+    }
+    .social{
+      width: 49%;
+      float: right;
+    }
+  }
+  .ui-dialog-buttonpane {
+    .ui-dialog-buttonset{
+      float: left;
+      margin-left: 30px;
+      .form-submit{
+        background:#fb923d;
+        border:none;
+        color: #ffffff;
+        padding: 10px 30px;
+        text-transform: uppercase;
+        width: 170%;
+      }
+    }
+  }
+}
+

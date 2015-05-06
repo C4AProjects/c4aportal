@@ -5,9 +5,7 @@ dependencies:
   config:
     - system.menu.footer
   module:
-    - node
     - system
-    - user
   theme:
     - c4aportal
 id: c4aportal_footer

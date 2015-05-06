@@ -27,3 +27,4 @@ hidden:
   field_resource_image: true
   field_resource_technology: true
   field_resource_type: true
+  field_resource_video: true

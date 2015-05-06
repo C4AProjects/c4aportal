@@ -7,6 +7,8 @@ global-styling:
       css/print.css: { media: print }
   js:
     js/c4aportal.js: {}
+  dependencies:
+    - core/drupal.ajax
 
 #bxslider
 jquery.bxslider:
