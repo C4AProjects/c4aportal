@@ -1,0 +1,52 @@
+uuid: 6e0413c6-0b9d-4ce7-9500-fd546dc155d6
+langcode: und
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.user.register
+    - field.field.user.user.field_address
+    - field.field.user.user.field_bio
+    - field.field.user.user.field_company_name
+    - field.field.user.user.field_facebook
+    - field.field.user.user.field_full_name
+    - field.field.user.user.field_job_availability
+    - field.field.user.user.field_linkedin
+    - field.field.user.user.field_looking_for
+    - field.field.user.user.field_my_skills
+    - field.field.user.user.field_title
+    - field.field.user.user.field_twitter_nickname
+    - field.field.user.user.user_picture
+  module:
+    - user
+id: user.user.register
+targetEntityType: user
+bundle: user
+mode: register
+content:
+  account:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  field_full_name:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  contact: true
+  field_address: true
+  field_bio: true
+  field_company_name: true
+  field_facebook: true
+  field_job_availability: true
+  field_linkedin: true
+  field_looking_for: true
+  field_my_skills: true
+  field_title: true
+  field_twitter_nickname: true
+  language: true
+  signature_settings: true
+  timezone: true
+  user_picture: true
