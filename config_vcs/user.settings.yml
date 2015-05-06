@@ -1,6 +1,6 @@
 admin_role: administrator
 anonymous: Anonymous
-verify_mail: true
+verify_mail: false
 notify:
   cancel_confirm: true
   password_reset: true
@@ -14,5 +14,5 @@ register: visitors_admin_approval
 signatures: true
 cancel_method: user_cancel_block_unpublish
 password_reset_timeout: 86400
-password_strength: true
+password_strength: false
 langcode: en
