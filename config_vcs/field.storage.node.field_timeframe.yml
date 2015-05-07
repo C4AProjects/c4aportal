@@ -1,4 +1,4 @@
-uuid: 1a6163d0-2585-4619-a400-e7b71506de11
+uuid: 6d4a62f8-2d29-4539-b91b-27ab535a2663
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ settings:
   datetime_type: datetime
 module: datetime
 locked: false
-cardinality: 1
+cardinality: 2
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

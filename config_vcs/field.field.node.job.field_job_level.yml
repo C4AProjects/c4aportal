@@ -1,21 +1,21 @@
-uuid: b3208990-ec47-46ae-b238-56574ac8190b
+uuid: cd565c99-de3a-4ca2-8611-17d44f1b44aa
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_timeframe
+    - field.storage.node.field_job_level
     - node.type.job
   module:
-    - datetime
-id: node.job.field_timeframe
-field_name: field_timeframe
+    - options
+id: node.job.field_job_level
+field_name: field_job_level
 entity_type: node
 bundle: job
-label: Timeframe
+label: 'Job''s level'
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: datetime
+field_type: list_string

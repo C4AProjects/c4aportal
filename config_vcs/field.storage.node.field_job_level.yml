@@ -1,0 +1,29 @@
+uuid: 394ebd3d-f36c-4121-9b00-c076644443d0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_job_level
+field_name: field_job_level
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: be
+      label: Beginner
+    -
+      value: in
+      label: Intermediate
+    -
+      value: ex
+      label: Expert
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false

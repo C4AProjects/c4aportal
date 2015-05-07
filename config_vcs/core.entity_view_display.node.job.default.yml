@@ -4,12 +4,16 @@ status: true
 dependencies:
   config:
     - field.field.node.job.body
+    - field.field.node.job.field_job_image
+    - field.field.node.job.field_job_level
     - field.field.node.job.field_job_techno
     - field.field.node.job.field_rate_or_budget
     - field.field.node.job.field_timeframe
     - node.type.job
   module:
     - datetime
+    - image
+    - options
     - taxonomy
     - text
     - user
@@ -24,6 +28,20 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
+  field_job_image:
+    weight: 105
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_job_level:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
   field_job_techno:
     weight: 102
     label: above
@@ -41,7 +59,7 @@ content:
     third_party_settings: {  }
     type: number_decimal
   field_timeframe:
-    weight: 104
+    weight: 106
     label: above
     settings:
       format_type: medium
