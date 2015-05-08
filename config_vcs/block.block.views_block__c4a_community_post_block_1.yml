@@ -1,0 +1,35 @@
+uuid: 69823276-ba8d-43e3-9a61-97d3f865b515
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.c4a_community_post
+  module:
+    - node
+    - views
+  theme:
+    - c4aportal
+id: views_block__c4a_community_post_block_1
+theme: c4aportal
+region: aside_right
+weight: -14
+provider: null
+plugin: 'views_block:c4a_community_post-block_1'
+settings:
+  id: 'views_block:c4a_community_post-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  cache:
+    max_age: 0
+    contexts: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      community: community
+    negate: false
+    context_mapping:
+      node: node.node
