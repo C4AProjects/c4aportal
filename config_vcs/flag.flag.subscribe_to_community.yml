@@ -1,0 +1,44 @@
+uuid: 446f227e-2ac0-41f2-8a09-9e30fdf58354
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: subscribe_to_community
+label: 'subscribe to community'
+types:
+  community: community
+  page: '0'
+  article: '0'
+  project: '0'
+  job: '0'
+  client: '0'
+  event: '0'
+  post: '0'
+  resource: '0'
+entity_type: node
+enabled: true
+global: false
+flag_short: 'Join this community'
+flag_long: ''
+flag_message: 'You were subscribed to this community'
+unflag_short: 'Leave this community'
+unflag_long: ''
+unflag_message: ''
+unflag_denied_text: ''
+weight: 0
+flag_type: flagtype_node
+link_type: reload
+flagTypeConfig:
+  show_in_links:
+    full: 0
+    rss: 0
+    search_index: 0
+    search_result: 0
+    teaser: 0
+  show_as_field: 1
+  show_on_form: 0
+  show_contextual_link: 0
+  i18n: 0
+  access_author: ''
+linkTypeConfig: {  }

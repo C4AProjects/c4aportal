@@ -1,0 +1,31 @@
+uuid: f4dec383-48ae-4ab6-ac03-3aa45e7fcd33
+langcode: en
+status: true
+dependencies:
+  module:
+    - c4a_blocks
+    - node
+  theme:
+    - c4aportal
+id: members
+theme: c4aportal
+region: aside_right
+weight: -13
+provider: null
+plugin: community_member
+settings:
+  id: community_member
+  label: Members
+  provider: c4a_blocks
+  label_display: visible
+  cache:
+    max_age: 0
+    contexts: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      community: community
+    negate: false
+    context_mapping:
+      node: node.node
