@@ -7,11 +7,15 @@ dependencies:
     - field.storage.node.field_job_image
     - field.storage.node.field_job_level
     - field.storage.node.field_rate_or_budget
+    - field.storage.node.field_timeframe
     - node.type.job
+    - taxonomy.vocabulary.technology
   module:
+    - datetime
     - image
     - node
     - options
+    - taxonomy
     - text
     - user
 id: jobs
@@ -423,8 +427,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '{{ field_rate_or_budget }} /HR'
             make_link: false
             path: ''
             absolute: false
@@ -479,5 +483,146 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+        field_timeframe:
+          id: field_timeframe
+          table: node__field_timeframe
+          field: field_timeframe
+          plugin_id: field
       defaults:
         fields: false
+        filters: false
+        filter_groups: false
+      filters:
+        status:
+          value: true
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node
+          field: type
+          value:
+            job: job
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+        field_rate_or_budget_value:
+          id: field_rate_or_budget_value
+          table: node__field_rate_or_budget
+          field: field_rate_or_budget_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_rate_or_budget_value_op
+            label: 'Rate or Budget (field_rate_or_budget)'
+            description: null
+            use_operator: false
+            operator: field_rate_or_budget_value_op
+            identifier: field_rate_or_budget_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: true
+          group_info:
+            label: 'Price range'
+            description: ''
+            identifier: price
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: 'Under $10 /hr'
+                operator: '<'
+                value:
+                  value: '10'
+                  min: ''
+                  max: ''
+              2:
+                title: '$10 - 25 /hr'
+                operator: between
+                value:
+                  value: ''
+                  min: '10'
+                  max: '25'
+              3:
+                title: Free
+                operator: '='
+                value:
+                  value: '0'
+                  min: ''
+                  max: ''
+          plugin_id: numeric
+        field_job_techno_target_id:
+          id: field_job_techno_target_id
+          table: node__field_job_techno
+          field: field_job_techno_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_job_techno_target_id_op
+            label: 'Browse skills'
+            description: ''
+            use_operator: false
+            operator: field_job_techno_target_id_op
+            identifier: field_job_techno_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              developer: '0'
+              mentor: '0'
+              employer: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: textfield
+          limit: true
+          vid: technology
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      exposed_block: true
