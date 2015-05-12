@@ -11,8 +11,8 @@ dependencies:
     - c4aportal
 id: views_block__users_block_2
 theme: c4aportal
-region: content_bottom
-weight: -12
+region: aside_right
+weight: -10
 provider: null
 plugin: 'views_block:users-block_2'
 settings:
