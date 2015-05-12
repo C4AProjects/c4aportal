@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.event.body
     - field.field.node.event.field_end_date
+    - field.field.node.event.field_event_type
     - field.field.node.event.field_place
     - field.field.node.event.field_start_date
     - node.type.event
@@ -35,6 +36,11 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
+  field_event_type:
+    weight: 36
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
   field_place:
     weight: 35
     settings:

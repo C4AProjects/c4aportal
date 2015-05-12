@@ -5,11 +5,13 @@ dependencies:
   config:
     - field.field.node.event.body
     - field.field.node.event.field_end_date
+    - field.field.node.event.field_event_type
     - field.field.node.event.field_place
     - field.field.node.event.field_start_date
     - node.type.event
   module:
     - datetime
+    - taxonomy
     - text
     - user
 id: node.event.default
@@ -30,6 +32,12 @@ content:
       format_type: html_date
     third_party_settings: {  }
     label: above
+  field_event_type:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: taxonomy_term_reference_link
   field_place:
     type: basic_string
     weight: 105

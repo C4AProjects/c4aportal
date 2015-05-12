@@ -1,0 +1,22 @@
+uuid: 0f69b70c-5c9b-4150-bb41-65500613465a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_type
+    - node.type.event
+  module:
+    - taxonomy
+id: node.event.field_event_type
+field_name: field_event_type
+entity_type: node
+bundle: event
+label: 'Event''s type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+field_type: taxonomy_term_reference
