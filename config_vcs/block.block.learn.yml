@@ -1,0 +1,29 @@
+uuid: 1735b10a-4c2d-47b4-a907-7bab50bb47ab
+langcode: en
+status: true
+dependencies:
+  module:
+    - c4a_blocks
+    - system
+  theme:
+    - c4aportal
+id: learn
+theme: c4aportal
+region: content
+weight: -14
+provider: null
+plugin: learn
+settings:
+  id: learn
+  label: Learn
+  provider: c4a_blocks
+  label_display: visible
+  cache:
+    max_age: 0
+    contexts: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "learn/video-library\r\nlearn/articles"
+    negate: false
+    context_mapping: {  }
